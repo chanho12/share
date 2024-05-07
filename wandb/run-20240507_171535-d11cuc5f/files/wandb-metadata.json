@@ -1,0 +1,252 @@
+{
+    "os": "Linux-6.2.0-36-generic-x86_64-with-glibc2.35",
+    "python": "3.11.9",
+    "heartbeatAt": "2024-05-07T08:15:35.962594",
+    "startedAt": "2024-05-07T08:15:35.346525",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--local_rank=1",
+        "--model_name_or_path",
+        "/home/chanho/Model/COMEDY/EPISODE/result/model_path",
+        "--train_data_path",
+        "/home/chanho/Model/COMEDY/EPISODE/result/dataset/train_data.json",
+        "--valid_data_path",
+        "/home/chanho/Model/COMEDY/EPISODE/result/dataset/test_data.json",
+        "--per_device_train_batch_size",
+        "1",
+        "--per_device_eval_batch_size",
+        "1",
+        "--data_output_path",
+        "/home/chanho/Model/COMEDY/EPISODE/result/output_path/data",
+        "--max_seq_len",
+        "2048",
+        "--learning_rate",
+        "1e-5",
+        "--weight_decay",
+        "0.1",
+        "--num_train_epochs",
+        "50",
+        "--num_train_samples",
+        "3945",
+        "/home/chanho/Model/COMEDY/EPISODE/result/dataset/train_data.json",
+        "--gradient_accumulation_steps",
+        "4",
+        "--lr_scheduler_type",
+        "cosine",
+        "--num_warmup_steps",
+        "400",
+        "--seed",
+        "42",
+        "--zero_stage",
+        "2",
+        "--save_interval",
+        "2000",
+        "--log_interval",
+        "100",
+        "--eval_interval",
+        "100",
+        "--output_dir",
+        "/home/chanho/Model/COMEDY/EPISODE/result/output_path/2024-05-07-16.15.19",
+        "--gradient_checkpointing",
+        "--tensorboard_path",
+        "/home/chanho/Model/COMEDY/EPISODE/result/log_path/2024-05-07-16.15.19"
+    ],
+    "state": "running",
+    "program": "/home/chanho/Model/COMEDY/EPISODE/training/SFT/main.py",
+    "codePathLocal": "training/SFT/main.py",
+    "codePath": "training/SFT/main.py",
+    "host": "gpusystem",
+    "username": "chanho",
+    "executable": "/home/chanho/anaconda3/envs/COMEDY/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 2172.15984375,
+        "min": 1800.0,
+        "max": 4000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 4000.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 4000.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3631.648,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 4536.376,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1870.648,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 4539.84,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 4001.242,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3703.163,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1952.549,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 4508.419,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 4196.785,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1798.709,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 456.8854446411133,
+            "used": 308.5191879272461
+        }
+    },
+    "gpu": "NVIDIA RTX A5000",
+    "gpu_count": 2,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA RTX A5000",
+            "memory_total": 25757220864
+        },
+        {
+            "name": "NVIDIA RTX A5000",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 125.60873031616211
+    }
+}

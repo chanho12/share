@@ -1,0 +1,41 @@
+***** Running training *****
+***** Evaluating perplexity, Epoch 0/5 *****
+Beginning of Epoch 1/5
+Traceback (most recent call last):
+  File "/home/chanho/Model/COMEDY/EPISODE/training/SFT/main.py", line 442, in <module>
+    main()
+  File "/home/chanho/Model/COMEDY/EPISODE/training/SFT/main.py", line 379, in main
+    wandb.log({'step',loss})
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 420, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 371, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 361, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1838, in log
+    self._log(data=data, step=step, commit=commit)
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1597, in _log
+    raise ValueError("wandb.log must be passed a dictionary")
+ValueError: wandb.log must be passed a dictionary
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/chanho/Model/COMEDY/EPISODE/training/SFT/main.py", line 442, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/chanho/Model/COMEDY/EPISODE/training/SFT/main.py", line 379, in main
+[rank0]:     wandb.log({'step',loss})
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 420, in wrapper
+[rank0]:     return func(self, *args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 371, in wrapper_fn
+[rank0]:     return func(self, *args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 361, in wrapper
+[rank0]:     return func(self, *args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1838, in log
+[rank0]:     self._log(data=data, step=step, commit=commit)
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1597, in _log
+[rank0]:     raise ValueError("wandb.log must be passed a dictionary")
+[rank0]: ValueError: wandb.log must be passed a dictionary

@@ -1,0 +1,252 @@
+{
+    "os": "Linux-6.2.0-36-generic-x86_64-with-glibc2.35",
+    "python": "3.11.9",
+    "heartbeatAt": "2024-05-07T06:57:37.044912",
+    "startedAt": "2024-05-07T06:57:36.300813",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--local_rank=0",
+        "--model_name_or_path",
+        "/home/chanho/Model/COMEDY/EPISODE/result/model_path",
+        "--train_data_path",
+        "/home/chanho/Model/COMEDY/EPISODE/result/dataset/train_data.json",
+        "--valid_data_path",
+        "/home/chanho/Model/COMEDY/EPISODE/result/dataset/test_data.json",
+        "--per_device_train_batch_size",
+        "1",
+        "--per_device_eval_batch_size",
+        "1",
+        "--data_output_path",
+        "/home/chanho/Model/COMEDY/EPISODE/result/output_path/data",
+        "--max_seq_len",
+        "2048",
+        "--learning_rate",
+        "1e-5",
+        "--weight_decay",
+        "0.1",
+        "--num_train_epochs",
+        "5",
+        "--num_train_samples",
+        "3945",
+        "/home/chanho/Model/COMEDY/EPISODE/result/dataset/train_data.json",
+        "--gradient_accumulation_steps",
+        "4",
+        "--lr_scheduler_type",
+        "cosine",
+        "--num_warmup_steps",
+        "400",
+        "--seed",
+        "42",
+        "--zero_stage",
+        "2",
+        "--save_interval",
+        "2000",
+        "--log_interval",
+        "100",
+        "--eval_interval",
+        "1000",
+        "--output_dir",
+        "/home/chanho/Model/COMEDY/EPISODE/result/output_path/2024-05-07-14.57.19",
+        "--gradient_checkpointing",
+        "--tensorboard_path",
+        "/home/chanho/Model/COMEDY/EPISODE/result/log_path/2024-05-07-14.57.19"
+    ],
+    "state": "running",
+    "program": "/home/chanho/Model/COMEDY/EPISODE/training/SFT/main.py",
+    "codePathLocal": "training/SFT/main.py",
+    "codePath": "training/SFT/main.py",
+    "host": "gpusystem",
+    "username": "chanho",
+    "executable": "/home/chanho/anaconda3/envs/COMEDY/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 3111.8055937500003,
+        "min": 1800.0,
+        "max": 4000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3632.259,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3633.15,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3632.634,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3632.116,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3629.89,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 4538.67,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3743.068,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3632.084,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 4414.736,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 4000.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 4540.429,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3641.022,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3632.516,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3625.803,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 4541.256,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 4306.303,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 4308.887,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 4537.697,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 4363.807,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3632.536,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 456.8854446411133,
+            "used": 365.0110855102539
+        }
+    },
+    "gpu": "NVIDIA RTX A5000",
+    "gpu_count": 2,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA RTX A5000",
+            "memory_total": 25757220864
+        },
+        {
+            "name": "NVIDIA RTX A5000",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 125.60873031616211
+    }
+}

@@ -1,0 +1,321 @@
+2024-05-07 15:46:32,704 INFO    StreamThr :1579544 [internal.py:wandb_internal():86] W&B internal server running at pid: 1579544, started at: 2024-05-07 15:46:32.703725
+2024-05-07 15:46:32,705 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status
+2024-05-07 15:46:32,706 INFO    WriterThread:1579544 [datastore.py:open_for_write():87] open: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/run-xytn915o.wandb
+2024-05-07 15:46:32,707 DEBUG   SenderThread:1579544 [sender.py:send():379] send: header
+2024-05-07 15:46:32,707 DEBUG   SenderThread:1579544 [sender.py:send():379] send: run
+2024-05-07 15:46:33,193 INFO    SenderThread:1579544 [dir_watcher.py:__init__():211] watching files in: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files
+2024-05-07 15:46:33,193 INFO    SenderThread:1579544 [sender.py:_start_run_threads():1124] run started: xytn915o with start time 1715064392.702631
+2024-05-07 15:46:33,198 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: check_version
+2024-05-07 15:46:33,198 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: check_version
+2024-05-07 15:46:33,282 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: run_start
+2024-05-07 15:46:33,288 DEBUG   HandlerThread:1579544 [system_info.py:__init__():26] System info init
+2024-05-07 15:46:33,288 DEBUG   HandlerThread:1579544 [system_info.py:__init__():41] System info init done
+2024-05-07 15:46:33,289 INFO    HandlerThread:1579544 [system_monitor.py:start():194] Starting system monitor
+2024-05-07 15:46:33,289 INFO    SystemMonitor:1579544 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-07 15:46:33,289 INFO    HandlerThread:1579544 [system_monitor.py:probe():214] Collecting system info
+2024-05-07 15:46:33,289 INFO    SystemMonitor:1579544 [interfaces.py:start():190] Started cpu monitoring
+2024-05-07 15:46:33,290 INFO    SystemMonitor:1579544 [interfaces.py:start():190] Started disk monitoring
+2024-05-07 15:46:33,290 INFO    SystemMonitor:1579544 [interfaces.py:start():190] Started gpu monitoring
+2024-05-07 15:46:33,291 INFO    SystemMonitor:1579544 [interfaces.py:start():190] Started memory monitoring
+2024-05-07 15:46:33,291 INFO    SystemMonitor:1579544 [interfaces.py:start():190] Started network monitoring
+2024-05-07 15:46:33,307 DEBUG   HandlerThread:1579544 [system_info.py:probe():150] Probing system
+2024-05-07 15:46:33,308 DEBUG   HandlerThread:1579544 [gitlib.py:_init_repo():56] git repository is invalid
+2024-05-07 15:46:33,308 DEBUG   HandlerThread:1579544 [system_info.py:probe():198] Probing system done
+2024-05-07 15:46:33,308 DEBUG   HandlerThread:1579544 [system_monitor.py:probe():223] {'os': 'Linux-6.2.0-36-generic-x86_64-with-glibc2.35', 'python': '3.11.9', 'heartbeatAt': '2024-05-07T06:46:33.307178', 'startedAt': '2024-05-07T06:46:32.697930', 'docker': None, 'cuda': None, 'args': ('--local_rank=0', '--model_name_or_path', '/home/chanho/Model/COMEDY/EPISODE/result/model_path', '--train_data_path', '/home/chanho/Model/COMEDY/EPISODE/result/dataset/train_data.json', '--valid_data_path', '/home/chanho/Model/COMEDY/EPISODE/result/dataset/test_data.json', '--per_device_train_batch_size', '1', '--per_device_eval_batch_size', '1', '--data_output_path', '/home/chanho/Model/COMEDY/EPISODE/result/output_path/data', '--max_seq_len', '2048', '--learning_rate', '1e-5', '--weight_decay', '0.1', '--num_train_epochs', '5', '--num_train_samples', '3945', '/home/chanho/Model/COMEDY/EPISODE/result/dataset/train_data.json', '--gradient_accumulation_steps', '4', '--lr_scheduler_type', 'cosine', '--num_warmup_steps', '400', '--seed', '42', '--zero_stage', '2', '--save_interval', '2000', '--log_interval', '100', '--eval_interval', '1000', '--output_dir', '/home/chanho/Model/COMEDY/EPISODE/result/output_path/2024-05-07-14.46.16', '--gradient_checkpointing', '--tensorboard_path', '/home/chanho/Model/COMEDY/EPISODE/result/log_path/2024-05-07-14.46.16'), 'state': 'running', 'program': '/home/chanho/Model/COMEDY/EPISODE/training/SFT/main.py', 'codePathLocal': 'training/SFT/main.py', 'codePath': 'training/SFT/main.py', 'host': 'gpusystem', 'username': 'chanho', 'executable': '/home/chanho/anaconda3/envs/COMEDY/bin/python', 'cpu_count': 16, 'cpu_count_logical': 32, 'cpu_freq': {'current': 3129.27371875, 'min': 1800.0, 'max': 4000.0}, 'cpu_freq_per_core': [{'current': 3630.059, 'min': 1800.0, 'max': 4000.0}, {'current': 1800.0, 'min': 1800.0, 'max': 4000.0}, {'current': 2900.0, 'min': 1800.0, 'max': 4000.0}, {'current': 4537.446, 'min': 1800.0, 'max': 4000.0}, {'current': 4534.734, 'min': 1800.0, 'max': 4000.0}, {'current': 3626.531, 'min': 1800.0, 'max': 4000.0}, {'current': 3632.663, 'min': 1800.0, 'max': 4000.0}, {'current': 1800.0, 'min': 1800.0, 'max': 4000.0}, {'current': 3891.869, 'min': 1800.0, 'max': 4000.0}, {'current': 3410.501, 'min': 1800.0, 'max': 4000.0}, {'current': 4000.0, 'min': 1800.0, 'max': 4000.0}, {'current': 3630.632, 'min': 1800.0, 'max': 4000.0}, {'current': 1800.0, 'min': 1800.0, 'max': 4000.0}, {'current': 2809.685, 'min': 1800.0, 'max': 4000.0}, {'current': 3426.598, 'min': 1800.0, 'max': 4000.0}, {'current': 4541.333, 'min': 1800.0, 'max': 4000.0}, {'current': 1800.0, 'min': 1800.0, 'max': 4000.0}, {'current': 1800.0, 'min': 1800.0, 'max': 4000.0}, {'current': 1800.0, 'min': 1800.0, 'max': 4000.0}, {'current': 1800.0, 'min': 1800.0, 'max': 4000.0}, {'current': 4537.391, 'min': 1800.0, 'max': 4000.0}, {'current': 1800.0, 'min': 1800.0, 'max': 4000.0}, {'current': 1800.0, 'min': 1800.0, 'max': 4000.0}, {'current': 3632.225, 'min': 1800.0, 'max': 4000.0}, {'current': 4304.658, 'min': 1800.0, 'max': 4000.0}, {'current': 1800.0, 'min': 1800.0, 'max': 4000.0}, {'current': 4533.481, 'min': 1800.0, 'max': 4000.0}, {'current': 3775.222, 'min': 1800.0, 'max': 4000.0}, {'current': 3632.399, 'min': 1800.0, 'max': 4000.0}, {'current': 3628.526, 'min': 1800.0, 'max': 4000.0}, {'current': 1800.0, 'min': 1800.0, 'max': 4000.0}, {'current': 4537.481, 'min': 1800.0, 'max': 4000.0}], 'disk': {'/': {'total': 456.8854446411133, 'used': 364.18822860717773}}, 'gpu': 'NVIDIA RTX A5000', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA RTX A5000', 'memory_total': 25757220864}, {'name': 'NVIDIA RTX A5000', 'memory_total': 25757220864}], 'memory': {'total': 125.60873031616211}}
+2024-05-07 15:46:33,308 INFO    HandlerThread:1579544 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-07 15:46:33,308 INFO    HandlerThread:1579544 [system_monitor.py:probe():227] Publishing system info
+2024-05-07 15:46:33,308 DEBUG   HandlerThread:1579544 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-05-07 15:46:34,194 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_created():271] file/dir created: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/conda-environment.yaml
+2024-05-07 15:46:34,625 DEBUG   HandlerThread:1579544 [system_info.py:_save_conda():222] Saving conda packages done
+2024-05-07 15:46:34,625 INFO    HandlerThread:1579544 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-07 15:46:34,633 DEBUG   SenderThread:1579544 [sender.py:send():379] send: files
+2024-05-07 15:46:34,633 INFO    SenderThread:1579544 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-05-07 15:46:34,685 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: python_packages
+2024-05-07 15:46:34,685 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:46:34,686 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: python_packages
+2024-05-07 15:46:34,686 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:46:34,686 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:46:34,987 DEBUG   SenderThread:1579544 [sender.py:send():379] send: telemetry
+2024-05-07 15:46:35,193 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/conda-environment.yaml
+2024-05-07 15:46:35,193 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_created():271] file/dir created: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/wandb-metadata.json
+2024-05-07 15:46:35,193 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_created():271] file/dir created: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/requirements.txt
+2024-05-07 15:46:35,194 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_created():271] file/dir created: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:46:35,512 INFO    wandb-upload_0:1579544 [upload_job.py:push():131] Uploaded file /tmp/tmpssug7vc1wandb/q0655xs5-wandb-metadata.json
+2024-05-07 15:46:37,194 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:46:37,988 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:46:42,988 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:46:47,989 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:46:49,685 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:46:49,685 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:46:49,728 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:46:52,990 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:46:57,990 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:47:02,993 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:47:04,199 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/config.yaml
+2024-05-07 15:47:04,685 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:47:04,686 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:47:04,728 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:47:08,893 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:47:13,894 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:47:17,202 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:47:19,029 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:47:19,686 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:47:19,686 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:47:19,686 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:47:24,964 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:47:29,964 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:47:33,292 DEBUG   SystemMonitor:1579544 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-07 15:47:33,293 DEBUG   SenderThread:1579544 [sender.py:send():379] send: stats
+2024-05-07 15:47:34,686 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:47:34,686 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:47:34,728 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:47:35,890 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:47:41,207 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:47:41,344 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:47:46,345 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:47:49,686 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:47:49,686 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:47:49,686 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:47:51,988 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:47:56,989 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:48:01,990 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:48:03,295 DEBUG   SenderThread:1579544 [sender.py:send():379] send: stats
+2024-05-07 15:48:04,686 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:48:04,686 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:48:04,687 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:48:07,212 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:48:07,989 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:48:12,989 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:48:18,452 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:48:19,214 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:48:19,686 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:48:19,686 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:48:19,687 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:48:23,966 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:48:28,966 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:48:31,217 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:48:33,296 DEBUG   SenderThread:1579544 [sender.py:send():379] send: stats
+2024-05-07 15:48:34,296 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:48:34,686 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:48:34,686 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:48:34,687 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:48:39,943 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:48:44,944 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:48:49,686 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:48:49,686 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:48:49,728 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:48:49,959 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:48:55,221 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:48:55,373 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:49:00,373 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:49:03,297 DEBUG   SenderThread:1579544 [sender.py:send():379] send: stats
+2024-05-07 15:49:04,686 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:49:04,687 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:49:04,688 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:49:05,995 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:49:10,996 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:49:15,996 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:49:19,226 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:49:19,686 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:49:19,686 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:49:19,688 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:49:20,998 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:49:25,999 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:49:30,999 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:49:33,298 DEBUG   SenderThread:1579544 [sender.py:send():379] send: stats
+2024-05-07 15:49:34,686 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:49:34,686 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:49:34,728 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:49:36,987 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:49:41,988 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:49:43,231 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:49:47,097 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:49:49,686 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:49:49,687 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:49:49,688 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:49:52,889 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:49:57,890 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:50:02,890 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:50:03,298 DEBUG   SenderThread:1579544 [sender.py:send():379] send: stats
+2024-05-07 15:50:04,686 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:50:04,687 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:50:04,728 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:50:07,235 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:50:08,444 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:50:13,445 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:50:18,446 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:50:19,686 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:50:19,687 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:50:19,688 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:50:21,238 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:50:23,948 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:50:28,949 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:50:33,241 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:50:33,299 DEBUG   SenderThread:1579544 [sender.py:send():379] send: stats
+2024-05-07 15:50:34,300 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:50:34,687 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:50:34,687 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:50:34,688 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:50:39,912 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:50:44,913 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:50:49,687 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:50:49,687 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:50:49,728 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:50:49,934 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:50:54,934 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:50:57,245 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:51:00,157 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:51:03,300 DEBUG   SenderThread:1579544 [sender.py:send():379] send: stats
+2024-05-07 15:51:04,687 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:51:04,687 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:51:04,688 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:51:05,979 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:51:10,979 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:51:15,980 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:51:19,687 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:51:19,687 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:51:19,688 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:51:21,112 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:51:21,250 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:51:26,113 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:51:31,113 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:51:33,301 DEBUG   SenderThread:1579544 [sender.py:send():379] send: stats
+2024-05-07 15:51:34,687 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:51:34,687 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:51:34,689 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:51:36,942 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:51:41,942 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:51:45,255 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:51:47,865 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:51:49,687 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:51:49,687 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:51:49,688 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:51:52,964 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:51:57,965 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:52:02,966 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:52:03,302 DEBUG   SenderThread:1579544 [sender.py:send():379] send: stats
+2024-05-07 15:52:04,687 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:52:04,687 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:52:04,728 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:52:08,172 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:52:09,261 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:52:13,217 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:52:18,217 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:52:19,687 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:52:19,688 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:52:19,689 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:52:23,264 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:52:23,997 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:52:28,997 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:52:33,266 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:52:33,303 DEBUG   SenderThread:1579544 [sender.py:send():379] send: stats
+2024-05-07 15:52:34,304 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:52:34,687 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:52:34,688 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:52:34,689 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:52:39,984 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:52:44,985 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:52:49,687 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:52:49,688 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:52:49,728 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:52:50,915 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:52:55,916 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:52:59,271 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:53:01,893 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:53:03,304 DEBUG   SenderThread:1579544 [sender.py:send():379] send: stats
+2024-05-07 15:53:04,687 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:53:04,688 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:53:04,689 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:53:06,962 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:53:11,962 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:53:16,963 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:53:19,688 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:53:19,688 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:53:19,728 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:53:22,801 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:53:23,276 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:53:27,802 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:53:32,803 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:53:33,305 DEBUG   SenderThread:1579544 [sender.py:send():379] send: stats
+2024-05-07 15:53:34,688 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:53:34,688 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:53:34,689 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:53:37,964 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:53:42,964 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:53:47,281 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:53:48,596 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:53:49,688 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:53:49,688 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:53:49,689 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:53:53,916 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:53:58,917 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:54:03,306 DEBUG   SenderThread:1579544 [sender.py:send():379] send: stats
+2024-05-07 15:54:04,306 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:54:04,688 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:54:04,688 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:54:04,729 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:54:09,914 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:54:11,286 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:54:14,957 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:54:19,688 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:54:19,688 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:54:19,689 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:54:19,993 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:54:25,289 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:54:25,752 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:54:30,753 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:54:33,307 DEBUG   SenderThread:1579544 [sender.py:send():379] send: stats
+2024-05-07 15:54:34,688 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:54:34,688 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:54:34,689 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:54:35,291 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:54:35,978 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:54:40,979 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:54:45,980 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:54:49,688 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:54:49,688 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:54:49,732 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:54:51,918 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:54:56,918 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:55:01,297 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:55:02,685 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:55:03,308 DEBUG   SenderThread:1579544 [sender.py:send():379] send: stats
+2024-05-07 15:55:04,688 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:55:04,689 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:55:04,690 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:55:07,921 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:55:12,921 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:55:17,922 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:55:19,688 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:55:19,689 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:55:19,732 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:55:22,937 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:55:25,302 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:55:28,602 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:55:33,309 DEBUG   SenderThread:1579544 [sender.py:send():379] send: stats
+2024-05-07 15:55:34,309 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:55:34,688 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:55:34,689 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:55:34,690 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:55:39,951 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:55:44,952 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:55:49,307 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:55:49,689 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:55:49,689 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:55:49,690 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:55:50,940 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:55:55,941 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:56:00,942 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:56:03,310 DEBUG   SenderThread:1579544 [sender.py:send():379] send: stats
+2024-05-07 15:56:04,689 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:56:04,689 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:56:04,732 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:56:06,007 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:56:11,007 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:56:13,313 INFO    Thread-12 :1579544 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240507_154632-xytn915o/files/output.log
+2024-05-07 15:56:16,745 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:56:19,689 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 15:56:19,689 DEBUG   SenderThread:1579544 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 15:56:19,690 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 15:56:21,964 DEBUG   HandlerThread:1579544 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 15:56:23,356 INFO    MainThread:1579544 [internal.py:handle_exit():76] Internal process exited

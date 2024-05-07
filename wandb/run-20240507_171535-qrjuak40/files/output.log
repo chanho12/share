@@ -1,0 +1,22 @@
+***** Running training *****
+***** Evaluating perplexity, Epoch 0/50 *****
+Beginning of Epoch 1/50
+[2024-05-07 17:16:02,055] [INFO] [logging.py:96:log_dist] [Rank 0] step=10, skipped=0, lr=[2.5000000000000004e-07], mom=[(0.9, 0.95)]
+[2024-05-07 17:16:02,055] [INFO] [timer.py:260:stop] epoch=0/micro_step=40/global_step=10, RunningAvgSamplesPerSec=3.3702507759372926, CurrSamplesPerSec=3.3685252044841345, MemAllocated=6.65GB, MaxMemAllocated=18.41GB
+[2024-05-07 17:16:26,003] [INFO] [logging.py:96:log_dist] [Rank 0] step=20, skipped=0, lr=[5.000000000000001e-07], mom=[(0.9, 0.95)]
+[2024-05-07 17:16:26,004] [INFO] [timer.py:260:stop] epoch=0/micro_step=80/global_step=20, RunningAvgSamplesPerSec=3.360833902895046, CurrSamplesPerSec=3.341112832948202, MemAllocated=6.65GB, MaxMemAllocated=18.41GB
+Epoch 1/50 with loss 13.899141292760868
+evaluating model ...
+***** Evaluating perplexity, Epoch 1/50 *****
+ppl: 1101246.25, loss: 13.911632537841797
+[2024-05-07 17:17:31,302] [INFO] [logging.py:96:log_dist] [Rank 0] step=30, skipped=0, lr=[7.5e-07], mom=[(0.9, 0.95)]
+[2024-05-07 17:17:31,302] [INFO] [timer.py:260:stop] epoch=0/micro_step=120/global_step=30, RunningAvgSamplesPerSec=3.3467005782220047, CurrSamplesPerSec=3.305370473237965, MemAllocated=6.65GB, MaxMemAllocated=18.41GB
+[2024-05-07 17:17:55,643] [INFO] [logging.py:96:log_dist] [Rank 0] step=40, skipped=0, lr=[1.0000000000000002e-06], mom=[(0.9, 0.95)]
+[2024-05-07 17:17:55,644] [INFO] [timer.py:260:stop] epoch=0/micro_step=160/global_step=40, RunningAvgSamplesPerSec=3.3343322700870806, CurrSamplesPerSec=3.299063199637161, MemAllocated=6.65GB, MaxMemAllocated=18.41GB
+[2024-05-07 17:18:20,016] [INFO] [logging.py:96:log_dist] [Rank 0] step=50, skipped=0, lr=[1.25e-06], mom=[(0.9, 0.95)]
+[2024-05-07 17:18:20,017] [INFO] [timer.py:260:stop] epoch=0/micro_step=200/global_step=50, RunningAvgSamplesPerSec=3.3262729847678076, CurrSamplesPerSec=3.2984703705251053, MemAllocated=6.65GB, MaxMemAllocated=18.41GB
+Epoch 1/50 with loss 13.994514688330502
+evaluating model ...
+***** Evaluating perplexity, Epoch 1/50 *****
+ppl: 1091399.375, loss: 13.902633666992188
+[2024-05-07 17:19:25,952] [INFO] [logging.py:96:log_dist] [Rank 0] step=60, skipped=0, lr=[1.5e-06], mom=[(0.9, 0.95)]

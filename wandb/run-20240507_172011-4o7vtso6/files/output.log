@@ -1,0 +1,27 @@
+***** Running training *****
+***** Evaluating perplexity, Epoch 0/500 *****
+Beginning of Epoch 1/500
+[2024-05-07 17:20:37,703] [INFO] [logging.py:96:log_dist] [Rank 0] step=10, skipped=0, lr=[2.5000000000000004e-07], mom=[(0.9, 0.95)]
+[2024-05-07 17:20:37,703] [INFO] [timer.py:260:stop] epoch=0/micro_step=40/global_step=10, RunningAvgSamplesPerSec=3.3367468650935153, CurrSamplesPerSec=3.3167332742825213, MemAllocated=6.65GB, MaxMemAllocated=18.41GB
+[2024-05-07 17:21:01,962] [INFO] [logging.py:96:log_dist] [Rank 0] step=20, skipped=0, lr=[5.000000000000001e-07], mom=[(0.9, 0.95)]
+[2024-05-07 17:21:01,962] [INFO] [timer.py:260:stop] epoch=0/micro_step=80/global_step=20, RunningAvgSamplesPerSec=3.3225875530173314, CurrSamplesPerSec=3.3056808034570784, MemAllocated=6.65GB, MaxMemAllocated=18.41GB
+Epoch 1/500 with loss 13.899540599029843
+evaluating model ...
+***** Evaluating perplexity, Epoch 1/500 *****
+ppl: 1103196.5, loss: 13.913424491882324
+[2024-05-07 17:22:07,853] [INFO] [logging.py:96:log_dist] [Rank 0] step=30, skipped=0, lr=[7.5e-07], mom=[(0.9, 0.95)]
+[2024-05-07 17:22:07,854] [INFO] [timer.py:260:stop] epoch=0/micro_step=120/global_step=30, RunningAvgSamplesPerSec=3.312097624610758, CurrSamplesPerSec=3.287907605047756, MemAllocated=6.65GB, MaxMemAllocated=18.41GB
+[2024-05-07 17:22:32,327] [INFO] [logging.py:96:log_dist] [Rank 0] step=40, skipped=0, lr=[1.0000000000000002e-06], mom=[(0.9, 0.95)]
+[2024-05-07 17:22:32,328] [INFO] [timer.py:260:stop] epoch=0/micro_step=160/global_step=40, RunningAvgSamplesPerSec=3.304928173015956, CurrSamplesPerSec=3.285979241817597, MemAllocated=6.65GB, MaxMemAllocated=18.41GB
+[2024-05-07 17:22:56,798] [INFO] [logging.py:96:log_dist] [Rank 0] step=50, skipped=0, lr=[1.25e-06], mom=[(0.9, 0.95)]
+[2024-05-07 17:22:56,799] [INFO] [timer.py:260:stop] epoch=0/micro_step=200/global_step=50, RunningAvgSamplesPerSec=3.3006980287881467, CurrSamplesPerSec=3.2868505727670394, MemAllocated=6.65GB, MaxMemAllocated=18.41GB
+Epoch 1/500 with loss 13.994986220971862
+evaluating model ...
+***** Evaluating perplexity, Epoch 1/500 *****
+ppl: 1090605.125, loss: 13.901937484741211
+[2024-05-07 17:24:02,835] [INFO] [logging.py:96:log_dist] [Rank 0] step=60, skipped=0, lr=[1.5e-06], mom=[(0.9, 0.95)]
+[2024-05-07 17:24:02,836] [INFO] [timer.py:260:stop] epoch=0/micro_step=240/global_step=60, RunningAvgSamplesPerSec=3.2978119294168695, CurrSamplesPerSec=3.2794610392358408, MemAllocated=6.65GB, MaxMemAllocated=18.41GB
+[2024-05-07 17:24:27,278] [INFO] [logging.py:96:log_dist] [Rank 0] step=70, skipped=0, lr=[1.75e-06], mom=[(0.9, 0.95)]
+[2024-05-07 17:24:27,279] [INFO] [timer.py:260:stop] epoch=0/micro_step=280/global_step=70, RunningAvgSamplesPerSec=3.2961308617219647, CurrSamplesPerSec=3.289996613368898, MemAllocated=6.65GB, MaxMemAllocated=18.41GB
+Epoch 1/500 with loss 13.957115658097885
+evaluating model ...

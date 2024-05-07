@@ -1,0 +1,84 @@
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/event_file_writer.py", line 244, in run
+    self._run()
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/event_file_writer.py", line 275, in _run
+    self._record_writer.write(data)
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/record_writer.py", line 40, in write
+    self._writer.write(header + header_crc + data + footer_crc)
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/compat/tensorflow_stub/io/gfile.py", line 773, in write
+    self.fs.append(self.filename, file_content, self.binary_mode)
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/compat/tensorflow_stub/io/gfile.py", line 167, in append
+    self._write(filename, file_content, "ab" if binary_mode else "a")
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/compat/tensorflow_stub/io/gfile.py", line 171, in _write
+    with io.open(filename, mode, encoding=encoding) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: b'/home/chanho/Model/COMEDY/EPISODE/result/log_path/2024-05-07-16.02.01/events.out.tfevents.1715068929.gpusystem.1595912.0'
+Traceback (most recent call last):
+  File "/home/chanho/Model/COMEDY/EPISODE/training/SFT/main.py", line 441, in <module>
+    main()
+  File "/home/chanho/Model/COMEDY/EPISODE/training/SFT/main.py", line 390, in main
+    writer.add_scalar("Train/loss", mean_loss/(step+1),  total_steps)
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/torch/utils/tensorboard/writer.py", line 396, in add_scalar
+    self._get_file_writer().add_summary(summary, global_step, walltime)
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/torch/utils/tensorboard/writer.py", line 114, in add_summary
+    self.add_event(event, global_step, walltime)
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/torch/utils/tensorboard/writer.py", line 98, in add_event
+    self.event_writer.add_event(event)
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/event_file_writer.py", line 117, in add_event
+    self._async_writer.write(event.SerializeToString())
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/event_file_writer.py", line 171, in write
+    self._check_worker_status()
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/event_file_writer.py", line 212, in _check_worker_status
+    raise exception
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/event_file_writer.py", line 244, in run
+    self._run()
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/event_file_writer.py", line 275, in _run
+    self._record_writer.write(data)
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/record_writer.py", line 40, in write
+    self._writer.write(header + header_crc + data + footer_crc)
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/compat/tensorflow_stub/io/gfile.py", line 773, in write
+    self.fs.append(self.filename, file_content, self.binary_mode)
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/compat/tensorflow_stub/io/gfile.py", line 167, in append
+    self._write(filename, file_content, "ab" if binary_mode else "a")
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/compat/tensorflow_stub/io/gfile.py", line 171, in _write
+    with io.open(filename, mode, encoding=encoding) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: b'/home/chanho/Model/COMEDY/EPISODE/result/log_path/2024-05-07-16.02.01/events.out.tfevents.1715068929.gpusystem.1595912.0'
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/home/chanho/Model/COMEDY/EPISODE/training/SFT/main.py", line 441, in <module>
+[rank1]:     main()
+[rank1]:   File "/home/chanho/Model/COMEDY/EPISODE/training/SFT/main.py", line 390, in main
+[rank1]:     writer.add_scalar("Train/loss", mean_loss/(step+1),  total_steps)
+[rank1]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/torch/utils/tensorboard/writer.py", line 396, in add_scalar
+[rank1]:     self._get_file_writer().add_summary(summary, global_step, walltime)
+[rank1]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/torch/utils/tensorboard/writer.py", line 114, in add_summary
+[rank1]:     self.add_event(event, global_step, walltime)
+[rank1]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/torch/utils/tensorboard/writer.py", line 98, in add_event
+[rank1]:     self.event_writer.add_event(event)
+[rank1]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/event_file_writer.py", line 117, in add_event
+[rank1]:     self._async_writer.write(event.SerializeToString())
+[rank1]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/event_file_writer.py", line 171, in write
+[rank1]:     self._check_worker_status()
+[rank1]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/event_file_writer.py", line 212, in _check_worker_status
+[rank1]:     raise exception
+[rank1]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+[rank1]:     self.run()
+[rank1]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/event_file_writer.py", line 244, in run
+[rank1]:     self._run()
+[rank1]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/event_file_writer.py", line 275, in _run
+[rank1]:     self._record_writer.write(data)
+[rank1]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/record_writer.py", line 40, in write
+[rank1]:     self._writer.write(header + header_crc + data + footer_crc)
+[rank1]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/compat/tensorflow_stub/io/gfile.py", line 773, in write
+[rank1]:     self.fs.append(self.filename, file_content, self.binary_mode)
+[rank1]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/compat/tensorflow_stub/io/gfile.py", line 167, in append
+[rank1]:     self._write(filename, file_content, "ab" if binary_mode else "a")
+[rank1]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/compat/tensorflow_stub/io/gfile.py", line 171, in _write
+[rank1]:     with io.open(filename, mode, encoding=encoding) as f:
+[rank1]:          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]: FileNotFoundError: [Errno 2] No such file or directory: b'/home/chanho/Model/COMEDY/EPISODE/result/log_path/2024-05-07-16.02.01/events.out.tfevents.1715068929.gpusystem.1595912.0'

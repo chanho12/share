@@ -1,0 +1,120 @@
+***** Running training *****
+***** Evaluating perplexity, Epoch 0/50 *****
+Beginning of Epoch 1/50
+[2024-05-07 17:02:45,286] [INFO] [logging.py:96:log_dist] [Rank 0] step=10, skipped=0, lr=[2.5000000000000004e-07], mom=[(0.9, 0.95)]
+[2024-05-07 17:02:45,287] [INFO] [timer.py:260:stop] epoch=0/micro_step=40/global_step=10, RunningAvgSamplesPerSec=3.3412809717710874, CurrSamplesPerSec=3.328663767127086, MemAllocated=6.65GB, MaxMemAllocated=18.41GB
+[2024-05-07 17:03:09,504] [INFO] [logging.py:96:log_dist] [Rank 0] step=20, skipped=0, lr=[5.000000000000001e-07], mom=[(0.9, 0.95)]
+[2024-05-07 17:03:09,505] [INFO] [timer.py:260:stop] epoch=0/micro_step=80/global_step=20, RunningAvgSamplesPerSec=3.328320531085488, CurrSamplesPerSec=3.311116292852693, MemAllocated=6.65GB, MaxMemAllocated=18.41GB
+Epoch 1/50 with loss 13.901086448442818
+evaluating model ...
+***** Evaluating perplexity, Epoch 1/50 *****
+ppl: 1104139.875, loss: 13.914255142211914
+[2024-05-07 17:04:15,540] [INFO] [logging.py:96:log_dist] [Rank 0] step=30, skipped=0, lr=[7.5e-07], mom=[(0.9, 0.95)]
+[2024-05-07 17:04:15,541] [INFO] [timer.py:260:stop] epoch=0/micro_step=120/global_step=30, RunningAvgSamplesPerSec=3.316886432735403, CurrSamplesPerSec=3.290489916201164, MemAllocated=6.65GB, MaxMemAllocated=18.41GB
+[2024-05-07 17:04:39,946] [INFO] [logging.py:96:log_dist] [Rank 0] step=40, skipped=0, lr=[1.0000000000000002e-06], mom=[(0.9, 0.95)]
+[2024-05-07 17:04:39,947] [INFO] [timer.py:260:stop] epoch=0/micro_step=160/global_step=40, RunningAvgSamplesPerSec=3.310443135533442, CurrSamplesPerSec=3.290626092542151, MemAllocated=6.65GB, MaxMemAllocated=18.41GB
+[2024-05-07 17:05:04,402] [INFO] [logging.py:96:log_dist] [Rank 0] step=50, skipped=0, lr=[1.25e-06], mom=[(0.9, 0.95)]
+[2024-05-07 17:05:04,403] [INFO] [timer.py:260:stop] epoch=0/micro_step=200/global_step=50, RunningAvgSamplesPerSec=3.3054620520400637, CurrSamplesPerSec=3.2789444424737546, MemAllocated=6.65GB, MaxMemAllocated=18.41GB
+Epoch 1/50 with loss 13.996813944916227
+evaluating model ...
+***** Evaluating perplexity, Epoch 1/50 *****
+ppl: 1092239.5, loss: 13.903424263000488
+[2024-05-07 17:06:10,609] [INFO] [logging.py:96:log_dist] [Rank 0] step=60, skipped=0, lr=[1.5e-06], mom=[(0.9, 0.95)]
+[2024-05-07 17:06:10,610] [INFO] [timer.py:260:stop] epoch=0/micro_step=240/global_step=60, RunningAvgSamplesPerSec=3.3014426859515433, CurrSamplesPerSec=3.2806060155727543, MemAllocated=6.65GB, MaxMemAllocated=18.41GB
+[2024-05-07 17:06:35,104] [INFO] [logging.py:96:log_dist] [Rank 0] step=70, skipped=0, lr=[1.75e-06], mom=[(0.9, 0.95)]
+[2024-05-07 17:06:35,105] [INFO] [timer.py:260:stop] epoch=0/micro_step=280/global_step=70, RunningAvgSamplesPerSec=3.298565944947128, CurrSamplesPerSec=3.27938988535184, MemAllocated=6.65GB, MaxMemAllocated=18.41GB
+Epoch 1/50 with loss 13.95807671150892
+evaluating model ...
+***** Evaluating perplexity, Epoch 1/50 *****
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/event_file_writer.py", line 244, in run
+    self._run()
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/event_file_writer.py", line 275, in _run
+    self._record_writer.write(data)
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/record_writer.py", line 40, in write
+    self._writer.write(header + header_crc + data + footer_crc)
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/compat/tensorflow_stub/io/gfile.py", line 773, in write
+    self.fs.append(self.filename, file_content, self.binary_mode)
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/compat/tensorflow_stub/io/gfile.py", line 167, in append
+    self._write(filename, file_content, "ab" if binary_mode else "a")
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/compat/tensorflow_stub/io/gfile.py", line 171, in _write
+    with io.open(filename, mode, encoding=encoding) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: b'/home/chanho/Model/COMEDY/EPISODE/result/log_path/2024-05-07-16.02.01/events.out.tfevents.1715068929.gpusystem.1595911.0'
+ppl: 1033618.5, loss: 13.848283767700195
+[2024-05-07 17:07:41,176] [INFO] [logging.py:96:log_dist] [Rank 0] step=80, skipped=0, lr=[2.0000000000000003e-06], mom=[(0.9, 0.95)]
+[2024-05-07 17:07:41,177] [INFO] [timer.py:260:stop] epoch=0/micro_step=320/global_step=80, RunningAvgSamplesPerSec=3.296266423429659, CurrSamplesPerSec=3.279282198859703, MemAllocated=6.65GB, MaxMemAllocated=18.41GB
+[2024-05-07 17:08:05,657] [INFO] [logging.py:96:log_dist] [Rank 0] step=90, skipped=0, lr=[2.25e-06], mom=[(0.9, 0.95)]
+[2024-05-07 17:08:05,658] [INFO] [timer.py:260:stop] epoch=0/micro_step=360/global_step=90, RunningAvgSamplesPerSec=3.2947276371184353, CurrSamplesPerSec=3.2780090859685256, MemAllocated=6.65GB, MaxMemAllocated=18.41GB
+[2024-05-07 17:08:30,166] [INFO] [logging.py:96:log_dist] [Rank 0] step=100, skipped=0, lr=[2.5e-06], mom=[(0.9, 0.95)]
+[2024-05-07 17:08:30,167] [INFO] [timer.py:260:stop] epoch=0/micro_step=400/global_step=100, RunningAvgSamplesPerSec=3.2932530663283006, CurrSamplesPerSec=3.277613641980265, MemAllocated=6.65GB, MaxMemAllocated=18.41GB
+Epoch 1/50 with loss 13.958685910612568
+Traceback (most recent call last):
+  File "/home/chanho/Model/COMEDY/EPISODE/training/SFT/main.py", line 441, in <module>
+    main()
+  File "/home/chanho/Model/COMEDY/EPISODE/training/SFT/main.py", line 390, in main
+    writer.add_scalar("Train/loss", mean_loss/(step+1),  total_steps)
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/torch/utils/tensorboard/writer.py", line 396, in add_scalar
+    self._get_file_writer().add_summary(summary, global_step, walltime)
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/torch/utils/tensorboard/writer.py", line 114, in add_summary
+    self.add_event(event, global_step, walltime)
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/torch/utils/tensorboard/writer.py", line 98, in add_event
+    self.event_writer.add_event(event)
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/event_file_writer.py", line 117, in add_event
+    self._async_writer.write(event.SerializeToString())
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/event_file_writer.py", line 171, in write
+    self._check_worker_status()
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/event_file_writer.py", line 212, in _check_worker_status
+    raise exception
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/event_file_writer.py", line 244, in run
+    self._run()
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/event_file_writer.py", line 275, in _run
+    self._record_writer.write(data)
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/record_writer.py", line 40, in write
+    self._writer.write(header + header_crc + data + footer_crc)
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/compat/tensorflow_stub/io/gfile.py", line 773, in write
+    self.fs.append(self.filename, file_content, self.binary_mode)
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/compat/tensorflow_stub/io/gfile.py", line 167, in append
+    self._write(filename, file_content, "ab" if binary_mode else "a")
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/compat/tensorflow_stub/io/gfile.py", line 171, in _write
+    with io.open(filename, mode, encoding=encoding) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: b'/home/chanho/Model/COMEDY/EPISODE/result/log_path/2024-05-07-16.02.01/events.out.tfevents.1715068929.gpusystem.1595911.0'
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/chanho/Model/COMEDY/EPISODE/training/SFT/main.py", line 441, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/chanho/Model/COMEDY/EPISODE/training/SFT/main.py", line 390, in main
+[rank0]:     writer.add_scalar("Train/loss", mean_loss/(step+1),  total_steps)
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/torch/utils/tensorboard/writer.py", line 396, in add_scalar
+[rank0]:     self._get_file_writer().add_summary(summary, global_step, walltime)
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/torch/utils/tensorboard/writer.py", line 114, in add_summary
+[rank0]:     self.add_event(event, global_step, walltime)
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/torch/utils/tensorboard/writer.py", line 98, in add_event
+[rank0]:     self.event_writer.add_event(event)
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/event_file_writer.py", line 117, in add_event
+[rank0]:     self._async_writer.write(event.SerializeToString())
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/event_file_writer.py", line 171, in write
+[rank0]:     self._check_worker_status()
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/event_file_writer.py", line 212, in _check_worker_status
+[rank0]:     raise exception
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+[rank0]:     self.run()
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/event_file_writer.py", line 244, in run
+[rank0]:     self._run()
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/event_file_writer.py", line 275, in _run
+[rank0]:     self._record_writer.write(data)
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/summary/writer/record_writer.py", line 40, in write
+[rank0]:     self._writer.write(header + header_crc + data + footer_crc)
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/compat/tensorflow_stub/io/gfile.py", line 773, in write
+[rank0]:     self.fs.append(self.filename, file_content, self.binary_mode)
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/compat/tensorflow_stub/io/gfile.py", line 167, in append
+[rank0]:     self._write(filename, file_content, "ab" if binary_mode else "a")
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/tensorboard/compat/tensorflow_stub/io/gfile.py", line 171, in _write
+[rank0]:     with io.open(filename, mode, encoding=encoding) as f:
+[rank0]:          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: FileNotFoundError: [Errno 2] No such file or directory: b'/home/chanho/Model/COMEDY/EPISODE/result/log_path/2024-05-07-16.02.01/events.out.tfevents.1715068929.gpusystem.1595911.0'
