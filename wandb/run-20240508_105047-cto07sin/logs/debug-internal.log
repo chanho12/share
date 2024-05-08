@@ -1,0 +1,864 @@
+2024-05-08 10:50:47,759 INFO    StreamThr :1726846 [internal.py:wandb_internal():86] W&B internal server running at pid: 1726846, started at: 2024-05-08 10:50:47.758977
+2024-05-08 10:50:47,760 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: status
+2024-05-08 10:50:47,761 INFO    WriterThread:1726846 [datastore.py:open_for_write():87] open: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/run-cto07sin.wandb
+2024-05-08 10:50:47,762 DEBUG   SenderThread:1726846 [sender.py:send():379] send: header
+2024-05-08 10:50:47,763 DEBUG   SenderThread:1726846 [sender.py:send():379] send: run
+2024-05-08 10:50:48,288 INFO    SenderThread:1726846 [dir_watcher.py:__init__():211] watching files in: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files
+2024-05-08 10:50:48,288 INFO    SenderThread:1726846 [sender.py:_start_run_threads():1124] run started: cto07sin with start time 1715133047.758241
+2024-05-08 10:50:48,294 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: check_version
+2024-05-08 10:50:48,294 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: check_version
+2024-05-08 10:50:48,380 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: run_start
+2024-05-08 10:50:48,388 DEBUG   HandlerThread:1726846 [system_info.py:__init__():26] System info init
+2024-05-08 10:50:48,388 DEBUG   HandlerThread:1726846 [system_info.py:__init__():41] System info init done
+2024-05-08 10:50:48,388 INFO    HandlerThread:1726846 [system_monitor.py:start():194] Starting system monitor
+2024-05-08 10:50:48,388 INFO    SystemMonitor:1726846 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-08 10:50:48,389 INFO    HandlerThread:1726846 [system_monitor.py:probe():214] Collecting system info
+2024-05-08 10:50:48,389 INFO    SystemMonitor:1726846 [interfaces.py:start():190] Started cpu monitoring
+2024-05-08 10:50:48,390 INFO    SystemMonitor:1726846 [interfaces.py:start():190] Started disk monitoring
+2024-05-08 10:50:48,390 INFO    SystemMonitor:1726846 [interfaces.py:start():190] Started gpu monitoring
+2024-05-08 10:50:48,391 INFO    SystemMonitor:1726846 [interfaces.py:start():190] Started memory monitoring
+2024-05-08 10:50:48,391 INFO    SystemMonitor:1726846 [interfaces.py:start():190] Started network monitoring
+2024-05-08 10:50:48,407 DEBUG   HandlerThread:1726846 [system_info.py:probe():150] Probing system
+2024-05-08 10:50:48,408 DEBUG   HandlerThread:1726846 [system_info.py:_probe_git():135] Probing git
+2024-05-08 10:50:48,412 DEBUG   HandlerThread:1726846 [system_info.py:_probe_git():143] Probing git done
+2024-05-08 10:50:48,412 DEBUG   HandlerThread:1726846 [system_info.py:probe():198] Probing system done
+2024-05-08 10:50:48,412 DEBUG   HandlerThread:1726846 [system_monitor.py:probe():223] {'os': 'Linux-6.2.0-36-generic-x86_64-with-glibc2.35', 'python': '3.11.9', 'heartbeatAt': '2024-05-08T01:50:48.407339', 'startedAt': '2024-05-08T01:50:47.752930', 'docker': None, 'cuda': None, 'args': ('--local_rank=0', '--model_name_or_path', '/home/chanho/Model/COMEDY/EPISODE/result/model_path', '--train_data_path', '/home/chanho/Model/COMEDY/EPISODE/result/dataset/train_data.json', '--valid_data_path', '/home/chanho/Model/COMEDY/EPISODE/result/dataset/test_data.json', '--per_device_train_batch_size', '1', '--per_device_eval_batch_size', '1', '--data_output_path', '/home/chanho/Model/COMEDY/EPISODE/result/output_path/data', '--max_seq_len', '2048', '--learning_rate', '1e-5', '--weight_decay', '0.1', '--num_train_epochs', '500', '--num_train_samples', '3945', '/home/chanho/Model/COMEDY/EPISODE/result/dataset/train_data.json', '--gradient_accumulation_steps', '4', '--lr_scheduler_type', 'cosine', '--num_warmup_steps', '400', '--seed', '42', '--zero_stage', '2', '--save_interval', '2000', '--log_interval', '100', '--eval_interval', '100', '--output_dir', '/home/chanho/Model/COMEDY/EPISODE/result/output_path/2024-05-08-09.50.29', '--gradient_checkpointing', '--tensorboard_path', '/home/chanho/Model/COMEDY/EPISODE/result/log_path/2024-05-08-09.50.29'), 'state': 'running', 'program': '/home/chanho/Model/COMEDY/EPISODE/training/SFT/main.py', 'codePathLocal': 'training/SFT/main.py', 'codePath': 'training/SFT/main.py', 'git': {'remote': 'https://github.com/chanho12/share.git', 'commit': '41ea4e9c3d6614847a6b7ab7029b281c581775b1'}, 'email': 'cksgh0984@gmail.com', 'root': '/home/chanho/Model/COMEDY/EPISODE', 'host': 'gpusystem', 'username': 'chanho', 'executable': '/home/chanho/anaconda3/envs/COMEDY/bin/python', 'cpu_count': 16, 'cpu_count_logical': 32, 'cpu_freq': {'current': 2939.63096875, 'min': 1800.0, 'max': 4000.0}, 'cpu_freq_per_core': [{'current': 2930.206, 'min': 1800.0, 'max': 4000.0}, {'current': 3501.209, 'min': 1800.0, 'max': 4000.0}, {'current': 1800.0, 'min': 1800.0, 'max': 4000.0}, {'current': 1800.0, 'min': 1800.0, 'max': 4000.0}, {'current': 1800.0, 'min': 1800.0, 'max': 4000.0}, {'current': 1800.0, 'min': 1800.0, 'max': 4000.0}, {'current': 2862.757, 'min': 1800.0, 'max': 4000.0}, {'current': 4000.0, 'min': 1800.0, 'max': 4000.0}, {'current': 4538.109, 'min': 1800.0, 'max': 4000.0}, {'current': 1800.0, 'min': 1800.0, 'max': 4000.0}, {'current': 4528.2, 'min': 1800.0, 'max': 4000.0}, {'current': 1800.0, 'min': 1800.0, 'max': 4000.0}, {'current': 1800.0, 'min': 1800.0, 'max': 4000.0}, {'current': 1800.0, 'min': 1800.0, 'max': 4000.0}, {'current': 1800.0, 'min': 1800.0, 'max': 4000.0}, {'current': 3632.897, 'min': 1800.0, 'max': 4000.0}, {'current': 3478.602, 'min': 1800.0, 'max': 4000.0}, {'current': 4495.119, 'min': 1800.0, 'max': 4000.0}, {'current': 2838.935, 'min': 1800.0, 'max': 4000.0}, {'current': 3615.518, 'min': 1800.0, 'max': 4000.0}, {'current': 4533.904, 'min': 1800.0, 'max': 4000.0}, {'current': 3583.624, 'min': 1800.0, 'max': 4000.0}, {'current': 1800.0, 'min': 1800.0, 'max': 4000.0}, {'current': 2738.17, 'min': 1800.0, 'max': 4000.0}, {'current': 4531.508, 'min': 1800.0, 'max': 4000.0}, {'current': 4540.446, 'min': 1800.0, 'max': 4000.0}, {'current': 4226.278, 'min': 1800.0, 'max': 4000.0}, {'current': 3634.057, 'min': 1800.0, 'max': 4000.0}, {'current': 1800.0, 'min': 1800.0, 'max': 4000.0}, {'current': 3633.293, 'min': 1800.0, 'max': 4000.0}, {'current': 3635.932, 'min': 1800.0, 'max': 4000.0}, {'current': 4308.381, 'min': 1800.0, 'max': 4000.0}], 'disk': {'/': {'total': 456.8854446411133, 'used': 317.5177993774414}}, 'gpu': 'NVIDIA RTX A5000', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA RTX A5000', 'memory_total': 25757220864}, {'name': 'NVIDIA RTX A5000', 'memory_total': 25757220864}], 'memory': {'total': 125.60873031616211}}
+2024-05-08 10:50:48,412 INFO    HandlerThread:1726846 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-08 10:50:48,412 INFO    HandlerThread:1726846 [system_monitor.py:probe():227] Publishing system info
+2024-05-08 10:50:48,412 DEBUG   HandlerThread:1726846 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-05-08 10:50:49,289 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_created():271] file/dir created: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/conda-environment.yaml
+2024-05-08 10:50:49,679 DEBUG   HandlerThread:1726846 [system_info.py:_save_conda():222] Saving conda packages done
+2024-05-08 10:50:49,679 INFO    HandlerThread:1726846 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-08 10:50:49,687 DEBUG   SenderThread:1726846 [sender.py:send():379] send: files
+2024-05-08 10:50:49,687 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-05-08 10:50:49,727 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: python_packages
+2024-05-08 10:50:49,728 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: python_packages
+2024-05-08 10:50:49,728 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 10:50:49,728 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 10:50:49,730 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 10:50:49,999 DEBUG   SenderThread:1726846 [sender.py:send():379] send: telemetry
+2024-05-08 10:50:50,191 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:50:50,192 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:50:50,192 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:50:50,192 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:50:50,288 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/conda-environment.yaml
+2024-05-08 10:50:50,289 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_created():271] file/dir created: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:50:50,289 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_created():271] file/dir created: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/requirements.txt
+2024-05-08 10:50:50,289 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_created():271] file/dir created: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/output.log
+2024-05-08 10:50:50,289 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_created():271] file/dir created: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-metadata.json
+2024-05-08 10:50:50,567 INFO    wandb-upload_0:1726846 [upload_job.py:push():131] Uploaded file /tmp/tmppdimsn96wandb/83fw6m0s-wandb-metadata.json
+2024-05-08 10:50:50,780 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:50:50,780 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:50:50,781 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:50:50,781 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:50:51,289 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:50:51,366 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:50:51,367 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:50:51,367 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:50:51,367 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:50:51,955 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:50:51,956 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:50:51,956 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:50:51,956 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:50:52,289 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:50:52,289 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/output.log
+2024-05-08 10:50:52,558 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:50:52,558 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:50:52,558 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:50:52,559 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:50:53,151 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:50:53,152 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:50:53,152 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:50:53,153 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 10:50:53,154 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:50:53,289 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:50:53,743 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:50:53,744 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:50:53,744 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:50:53,744 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:50:54,289 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:50:54,341 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:50:54,341 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:50:54,342 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:50:54,342 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:50:54,935 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:50:54,936 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:50:54,936 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:50:54,936 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:50:55,290 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:50:55,525 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:50:55,526 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:50:55,526 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:50:55,527 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:50:56,119 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:50:56,119 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:50:56,120 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:50:56,120 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:50:56,290 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:50:56,711 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:50:56,711 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:50:56,711 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:50:56,712 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:50:57,290 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:50:57,308 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:50:57,308 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:50:57,309 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:50:57,309 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:50:57,903 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:50:57,904 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:50:57,904 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:50:57,905 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:50:58,290 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:50:58,496 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:50:58,497 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:50:58,497 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:50:58,498 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 10:50:58,498 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:50:59,090 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:50:59,091 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:50:59,091 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:50:59,091 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:50:59,291 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:50:59,688 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:50:59,688 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:50:59,689 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:50:59,689 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:00,283 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:00,283 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:00,284 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:00,285 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:00,291 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:00,882 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:00,883 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:00,883 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:00,884 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:01,291 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:01,477 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:01,477 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:01,478 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:01,478 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:02,073 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:02,074 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:02,074 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:02,075 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:02,291 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:02,670 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:02,671 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:02,671 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:02,672 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:03,267 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:03,267 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:03,267 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:03,268 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:03,292 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:03,864 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:03,865 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:03,865 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:03,866 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 10:51:03,866 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:04,292 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:04,462 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:04,463 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:04,463 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:04,464 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:04,727 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 10:51:04,728 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 10:51:04,729 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 10:51:05,062 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:05,063 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:05,063 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:05,065 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:05,292 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:05,663 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:05,663 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:05,663 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:05,664 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:06,260 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:06,260 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:06,261 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:06,261 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:06,292 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:06,859 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:06,860 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:06,860 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:06,860 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:07,292 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:07,457 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:07,457 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:07,457 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:07,459 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:08,053 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:08,054 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:08,054 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:08,054 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:08,293 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:08,648 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:08,649 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:08,649 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:08,649 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:09,247 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:09,247 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:09,248 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:09,248 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 10:51:09,248 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:09,293 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:09,844 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:09,845 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:09,845 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:09,846 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:10,293 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:10,442 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:10,443 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:10,443 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:10,443 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:11,042 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:11,043 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:11,043 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:11,043 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:11,293 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:11,644 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:11,644 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:11,644 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:11,644 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:12,243 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:12,243 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:12,243 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:12,244 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:12,293 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:12,840 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:12,841 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:12,841 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:12,841 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:13,294 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:13,439 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:13,440 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:13,440 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:13,440 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:14,043 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:14,043 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:14,043 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:14,043 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:14,294 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:14,640 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:14,641 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:14,641 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:14,641 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 10:51:14,642 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:15,239 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:15,239 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:15,239 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:15,239 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:15,294 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:15,835 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:15,836 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:15,836 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:15,836 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:16,295 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:16,295 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/output.log
+2024-05-08 10:51:16,435 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:16,435 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:16,435 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:16,436 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:17,030 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:17,031 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:17,031 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:17,032 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:17,295 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:17,628 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:17,628 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:17,628 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:17,629 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:18,223 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:18,224 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:18,224 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:18,224 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:18,295 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:18,820 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:18,821 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:18,821 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:18,821 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:19,295 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:19,417 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:19,417 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:19,417 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:19,418 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:19,728 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 10:51:19,728 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 10:51:19,729 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 10:51:19,944 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 10:51:20,014 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:20,147 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:20,147 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:20,148 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:20,295 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:20,295 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/config.yaml
+2024-05-08 10:51:20,612 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:20,612 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:20,612 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:20,612 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:21,209 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:21,210 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:21,210 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:21,210 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:21,295 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:21,804 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:21,805 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:21,805 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:21,805 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:22,296 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:22,401 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:22,402 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:22,402 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:22,402 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:23,000 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:23,000 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:23,000 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:23,000 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:23,296 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:23,599 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:23,600 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:23,600 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:23,600 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:24,198 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:24,198 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:24,198 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:24,198 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:24,296 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:24,796 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:24,796 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:24,796 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:24,797 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:25,296 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:25,394 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:25,395 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:25,395 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:25,395 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 10:51:25,395 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:25,995 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:25,995 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:25,996 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:25,996 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:26,297 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:26,595 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:26,595 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:26,595 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:26,596 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:27,194 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:27,195 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:27,195 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:27,195 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:27,297 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:27,791 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:27,791 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:27,791 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:27,792 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:28,297 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:28,392 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:28,393 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:28,393 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:28,393 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:28,993 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:28,994 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:28,994 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:28,995 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:29,297 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:29,592 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:29,592 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:29,593 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:29,593 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:30,192 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:30,193 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:30,193 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:30,193 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:30,297 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:30,794 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:30,794 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:30,794 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:30,795 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 10:51:30,795 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:31,298 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:31,394 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:31,395 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:31,395 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:31,396 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:31,995 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:31,996 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:31,996 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:31,996 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:32,298 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:32,595 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:32,596 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:32,596 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:32,596 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:33,196 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:33,197 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:33,197 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:33,197 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:33,298 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:33,797 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:33,798 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:33,798 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:33,799 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:34,298 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:34,399 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:34,400 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:34,400 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:34,400 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:34,728 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 10:51:34,728 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 10:51:34,729 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 10:51:34,998 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:34,999 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:34,999 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:34,999 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:35,299 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:35,601 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:35,601 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:35,602 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:35,602 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:36,200 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:36,201 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:36,201 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:36,201 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 10:51:36,202 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:36,299 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:36,799 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:36,800 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:36,800 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:36,800 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:37,299 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:37,400 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:37,400 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:37,400 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:37,401 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:38,002 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:38,002 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:38,002 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:38,002 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:38,299 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:38,603 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:38,604 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:38,604 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:38,605 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:39,203 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:39,203 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:39,203 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:39,203 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:39,300 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:39,801 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:39,802 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:39,802 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:39,802 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:40,300 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:40,300 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/output.log
+2024-05-08 10:51:40,401 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:40,402 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:40,402 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:40,403 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:41,003 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:41,003 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:41,004 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:41,004 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:41,300 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:41,604 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:41,605 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:41,605 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:41,605 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 10:51:41,605 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:42,205 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:42,206 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:42,206 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:42,206 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:42,300 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:42,809 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:42,809 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:42,810 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:42,810 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:43,301 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:43,411 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:43,412 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:43,412 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:43,413 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:44,016 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:44,016 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:44,016 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:44,017 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:44,301 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:44,619 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:44,620 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:44,620 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:44,620 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:45,222 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:45,222 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:45,223 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:45,223 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:45,301 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:45,825 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:45,826 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:45,826 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:45,827 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:46,301 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:46,430 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:46,431 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:46,431 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:46,431 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:47,033 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:47,033 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:47,033 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:47,033 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 10:51:47,034 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:47,301 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:47,638 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:47,639 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:47,639 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:47,639 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:48,241 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:48,241 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:48,241 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:48,241 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:48,302 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:48,391 DEBUG   SystemMonitor:1726846 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-08 10:51:48,393 DEBUG   SenderThread:1726846 [sender.py:send():379] send: stats
+2024-05-08 10:51:48,842 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:48,842 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:48,843 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:48,843 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:49,302 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:49,444 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:49,445 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:49,445 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:49,445 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:49,728 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 10:51:49,728 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 10:51:49,729 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 10:51:50,049 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:51:50,050 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:51:50,050 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:51:50,050 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:51:50,302 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:51:52,303 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/output.log
+2024-05-08 10:51:52,468 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 10:51:57,469 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 10:52:02,469 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 10:52:04,728 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 10:52:04,728 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 10:52:04,729 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 10:52:08,026 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 10:52:13,026 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 10:52:18,027 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 10:52:18,394 DEBUG   SenderThread:1726846 [sender.py:send():379] send: stats
+2024-05-08 10:52:19,728 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 10:52:19,728 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 10:52:19,772 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 10:52:23,406 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 10:52:28,407 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 10:52:31,536 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:31,537 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:31,537 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:31,538 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:31,684 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:31,685 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:31,685 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:31,685 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:32,292 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:32,293 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:32,293 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:32,293 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:32,312 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:52:32,312 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/output.log
+2024-05-08 10:52:32,902 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:32,903 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:32,903 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:32,903 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:33,312 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:52:33,512 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:33,513 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:33,513 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:33,513 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 10:52:33,513 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:34,119 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:34,119 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:34,120 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:34,120 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:34,312 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:52:34,727 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:34,727 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:34,728 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:34,728 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:34,728 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 10:52:34,729 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 10:52:34,730 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 10:52:35,313 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:52:35,332 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:35,332 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:35,332 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:35,333 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:35,939 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:35,940 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:35,940 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:35,940 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:36,313 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:52:36,546 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:36,547 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:36,547 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:36,547 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:37,151 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:37,152 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:37,152 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:37,152 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:37,313 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:52:37,759 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:37,759 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:37,759 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:37,760 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:38,314 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:52:38,368 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:38,369 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:38,369 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:38,369 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:38,975 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:38,975 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:38,976 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:38,976 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 10:52:38,976 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:39,314 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:52:39,583 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:39,584 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:39,584 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:39,584 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:40,190 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:40,191 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:40,191 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:40,191 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:40,314 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:52:40,800 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:40,801 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:40,801 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:40,801 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:41,314 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:52:41,408 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:41,408 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:41,408 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:41,409 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:42,016 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:42,017 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:42,017 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:42,018 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:42,314 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:52:42,625 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:42,626 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:42,626 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:42,626 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:43,234 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:43,234 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:43,235 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:43,235 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:43,315 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:52:43,842 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:43,843 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:43,843 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:43,843 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:44,315 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:52:44,315 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/output.log
+2024-05-08 10:52:44,447 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:44,447 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:44,448 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:44,448 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 10:52:44,448 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:45,055 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:45,056 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:45,056 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:45,056 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:45,315 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:52:45,664 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:45,665 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:45,665 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:45,665 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:46,271 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:46,272 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:46,272 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:46,272 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:46,315 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:52:46,878 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:46,879 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:46,879 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:46,879 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:47,316 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:52:47,486 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:47,487 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:47,487 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:47,487 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:48,095 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:48,095 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:48,095 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:48,096 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:48,316 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:52:48,394 DEBUG   SenderThread:1726846 [sender.py:send():379] send: stats
+2024-05-08 10:52:48,703 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:48,704 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:48,704 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:48,704 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:49,310 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:49,311 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:49,311 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:49,311 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:49,316 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:52:49,728 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 10:52:49,729 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 10:52:49,730 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 10:52:49,922 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:50,042 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:50,042 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:50,042 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 10:52:50,042 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:50,316 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:52:50,531 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:50,532 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:50,532 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:50,532 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:51,141 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:51,142 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:51,142 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:51,142 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:51,317 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:52:51,749 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:51,750 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:51,750 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:51,750 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:52,317 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:52:52,359 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:52,360 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:52,360 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:52,361 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:52,970 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:52,971 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:52,971 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:52,971 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:53,317 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:52:53,579 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:53,579 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:53,579 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:53,579 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:54,189 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:54,190 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:54,190 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:54,190 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:54,318 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:52:54,798 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:54,799 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:54,799 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:54,799 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:55,318 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:52:55,409 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:55,410 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:55,410 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:55,410 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 10:52:55,410 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:56,017 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:56,018 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:56,018 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:56,018 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:56,318 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:52:56,624 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:56,624 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:56,624 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:56,624 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:57,232 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:57,232 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:57,232 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:57,233 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:57,318 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:52:57,841 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:57,842 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:57,842 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:57,842 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:58,318 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:52:58,449 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:58,450 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:58,450 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:58,450 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:59,057 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:59,057 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:59,057 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:59,058 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:52:59,319 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:52:59,666 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:52:59,667 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:52:59,667 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:52:59,667 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:53:00,277 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:53:00,278 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:53:00,278 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:53:00,278 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:53:00,319 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:53:00,885 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:53:00,885 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:53:00,886 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:53:00,886 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 10:53:00,886 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:53:01,319 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:53:01,494 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:53:01,494 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:53:01,494 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:53:01,495 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:53:02,101 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:53:02,102 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:53:02,102 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:53:02,102 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:53:02,319 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:53:02,712 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:53:02,712 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:53:02,712 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:53:02,713 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:53:03,320 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:53:03,322 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:53:03,323 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:53:03,323 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:53:03,323 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:53:03,931 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:53:03,932 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:53:03,932 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:53:03,932 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:53:04,320 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:53:04,540 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:53:04,540 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:53:04,541 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:53:04,541 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:53:04,728 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 10:53:04,728 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 10:53:04,730 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 10:53:05,149 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:53:05,149 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:53:05,149 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:53:05,149 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:53:05,320 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:53:05,758 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:53:05,759 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:53:05,759 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:53:05,759 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:53:06,320 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:53:06,370 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:53:06,371 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:53:06,371 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:53:06,371 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 10:53:06,371 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:53:06,978 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:53:06,978 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:53:06,979 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:53:06,979 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:53:07,320 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:53:07,588 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:53:07,589 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:53:07,589 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:53:07,589 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:53:08,197 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:53:08,198 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:53:08,198 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:53:08,198 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:53:08,321 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json
+2024-05-08 10:53:08,321 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/output.log
+2024-05-08 10:53:08,806 DEBUG   HandlerThread:1726846 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 10:53:08,806 DEBUG   SenderThread:1726846 [sender.py:send():379] send: history
+2024-05-08 10:53:08,806 DEBUG   SenderThread:1726846 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 10:53:08,806 INFO    SenderThread:1726846 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 10:53:09,321 INFO    Thread-12 :1726846 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/chanho/Model/COMEDY/EPISODE/wandb/run-20240508_105047-cto07sin/files/wandb-summary.json

@@ -1,0 +1,258 @@
+{
+    "os": "Linux-6.2.0-36-generic-x86_64-with-glibc2.35",
+    "python": "3.11.9",
+    "heartbeatAt": "2024-05-08T01:50:48.100504",
+    "startedAt": "2024-05-08T01:50:47.418903",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--local_rank=1",
+        "--model_name_or_path",
+        "/home/chanho/Model/COMEDY/EPISODE/result/model_path",
+        "--train_data_path",
+        "/home/chanho/Model/COMEDY/EPISODE/result/dataset/train_data.json",
+        "--valid_data_path",
+        "/home/chanho/Model/COMEDY/EPISODE/result/dataset/test_data.json",
+        "--per_device_train_batch_size",
+        "1",
+        "--per_device_eval_batch_size",
+        "1",
+        "--data_output_path",
+        "/home/chanho/Model/COMEDY/EPISODE/result/output_path/data",
+        "--max_seq_len",
+        "2048",
+        "--learning_rate",
+        "1e-5",
+        "--weight_decay",
+        "0.1",
+        "--num_train_epochs",
+        "500",
+        "--num_train_samples",
+        "3945",
+        "/home/chanho/Model/COMEDY/EPISODE/result/dataset/train_data.json",
+        "--gradient_accumulation_steps",
+        "4",
+        "--lr_scheduler_type",
+        "cosine",
+        "--num_warmup_steps",
+        "400",
+        "--seed",
+        "42",
+        "--zero_stage",
+        "2",
+        "--save_interval",
+        "2000",
+        "--log_interval",
+        "100",
+        "--eval_interval",
+        "100",
+        "--output_dir",
+        "/home/chanho/Model/COMEDY/EPISODE/result/output_path/2024-05-08-09.50.29",
+        "--gradient_checkpointing",
+        "--tensorboard_path",
+        "/home/chanho/Model/COMEDY/EPISODE/result/log_path/2024-05-08-09.50.29"
+    ],
+    "state": "running",
+    "program": "/home/chanho/Model/COMEDY/EPISODE/training/SFT/main.py",
+    "codePathLocal": "training/SFT/main.py",
+    "codePath": "training/SFT/main.py",
+    "git": {
+        "remote": "https://github.com/chanho12/share.git",
+        "commit": "41ea4e9c3d6614847a6b7ab7029b281c581775b1"
+    },
+    "email": "cksgh0984@gmail.com",
+    "root": "/home/chanho/Model/COMEDY/EPISODE",
+    "host": "gpusystem",
+    "username": "chanho",
+    "executable": "/home/chanho/anaconda3/envs/COMEDY/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 2654.308,
+        "min": 1800.0,
+        "max": 4000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3163.996,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 2781.06,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 2359.053,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 4534.947,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 4537.674,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 4288.28,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3633.039,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3628.871,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 4000.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 2750.764,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3162.216,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1794.891,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 2736.252,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 4239.25,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 4213.124,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3626.488,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 4000.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 4000.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 456.8854446411133,
+            "used": 317.5177917480469
+        }
+    },
+    "gpu": "NVIDIA RTX A5000",
+    "gpu_count": 2,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA RTX A5000",
+            "memory_total": 25757220864
+        },
+        {
+            "name": "NVIDIA RTX A5000",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 125.60873031616211
+    }
+}
