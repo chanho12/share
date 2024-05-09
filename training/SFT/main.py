@@ -193,7 +193,7 @@ def parse_args():
 
 def main():
 
-    print("**********************")
+    print("*************************")
 
     dist.init_process_group(backend='nccl', init_method='env://', timeout=datetime.timedelta(seconds=100))
 
