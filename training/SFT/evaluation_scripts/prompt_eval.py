@@ -228,7 +228,13 @@ def prompt_eval_finetuned(args, model_fintuned, tokenizer, device,prompts):
                                 num_return_sequences=args.num_return_sequences,
                                 max_new_tokens=args.max_new_tokens)
         print_utils(r_finetune_g)
-
+        print("==========finetune: Beam Search========")
+        r_finetune_g = generate(model_fintuned, tokenizer, inputs,
+                                num_beams = 2,
+                                num_beam_groups = args.num_beam_groups,
+                                num_return_sequences = args.num_return_sequences,
+                                max_new_tokens = args.max_new_tokens)
+        print_utils(r_finetune_g)
 
         print("====================prompt end=============================")
         print()
@@ -258,26 +264,10 @@ def main():
     # to make it a more meaningful comparison
     if args.language == "English":
         prompts = [
-            "Human: How was your today? Assistant :" 
+            "Human: How have you been? Great to see you again!  Assistant :",
+            "Human: I ate pizza yesterday, what did you eat?  Assistant :",
+            "HECTOR : Where are the birds? Is it the wrong time of year?  Assitant: "
         ]
-    elif args.language == "Chinese":
-        prompts = [
-            "Human: 请用几句话介绍一下微软? Assistant:",
-            "Human: 用几句话向6岁的孩子解释登月。 Assistant:",
-            "Human: 写一首关于一只聪明的青蛙的短诗。 Assistant:",
-            "Human: 谁是1955年的美国总统? Assistant:", "Human: 望远镜是如何工作的? Assistant:",
-            "Human: 鸟类为什么要南迁过冬? Assistant:"
-        ]
-    elif args.language == "Japanese":
-        prompts = [
-            "Human: マイクロソフトについて簡単に教えてください。 Assistant:",
-            "Human: 6歳児に月面着陸を短い文で説明する。 Assistant:",
-            "Human: 賢いカエルについて短い詩を書いてください。 Assistant:",
-            "Human: 1955年のアメリカ合衆国大統領は誰? Assistant:",
-            "Human: 望遠鏡はどのように機能しますか? Assistant:",
-            "Human: 鳥が冬に南に移動するのはなぜですか? Assistant:"
-        ]
-
 
     prompt_eval_baseline(args, model_baseline, basemodel_tokenizer, device, prompts)
     prompt_eval_finetuned(args, model_finetuned, tokenizer, device, prompts)
