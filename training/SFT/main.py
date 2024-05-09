@@ -11,8 +11,10 @@ import random
 import torch
 import wandb
 from tqdm import tqdm
+import datetime
 from torch.utils.data import DataLoader, RandomSampler, SequentialSampler
 from torch.utils.data.distributed import DistributedSampler
+import torch.distributed as dist
 from torch.utils import tensorboard
 
 from datasets.distributed import split_dataset_by_node
@@ -190,6 +192,9 @@ def parse_args():
 
 
 def main():
+
+    dist.init_process_group(backend='nccl', init_method='env://', timeout=datetime.timedelta(seconds=100))
+
     args = parse_args()
 
     if args.tensorboard_path != "":
