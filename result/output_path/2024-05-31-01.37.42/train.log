@@ -1,0 +1,205 @@
+[2024-05-31 01:37:44,777] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[2024-05-31 01:37:45,350] [WARNING] [runner.py:202:fetch_hostfile] Unable to find hostfile, will proceed with training with local resources only.
+[2024-05-31 01:37:45,350] [INFO] [runner.py:568:main] cmd = /home/chanho/anaconda3/envs/COMEDY/bin/python -u -m deepspeed.launcher.launch --world_info=eyJsb2NhbGhvc3QiOiBbMCwgMV19 --master_addr=127.0.0.1 --master_port=12340 --enable_each_rank_log=None training/EPISODE/main.py --model_name gemma --model_name_or_path /home/chanho/Model/SHARE/Refactorizing/result/output_path --train_data_path /home/chanho/Model/SHARE/Refactorizing/result/dataset/train_with_tag.json --valid_data_path /home/chanho/Model/SHARE/Refactorizing/result/dataset/valid_with_tag.json --per_device_train_batch_size 1 --per_device_eval_batch_size 1 --data_output_path /home/chanho/Model/SHARE/Refactorizing/result/output_path/data --max_seq_len 2048 --learning_rate 1e-5 --weight_decay 0.1 --num_train_epochs 50 --num_train_samples 14255 /home/chanho/Model/SHARE/Refactorizing/result/dataset/train_with_tag.json --gradient_accumulation_steps 1 --lr_scheduler_type cosine --num_warmup_steps 1000 --seed 42 --zero_stage 2 --save_interval 1000 --eval_interval 100 --output_dir /home/chanho/Model/SHARE/Refactorizing/result/output_path/2024-05-31-01.37.42
+[2024-05-31 01:37:46,715] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[2024-05-31 01:37:47,551] [INFO] [launch.py:146:main] WORLD INFO DICT: {'localhost': [0, 1]}
+[2024-05-31 01:37:47,551] [INFO] [launch.py:152:main] nnodes=1, num_local_procs=2, node_rank=0
+[2024-05-31 01:37:47,551] [INFO] [launch.py:163:main] global_rank_mapping=defaultdict(<class 'list'>, {'localhost': [0, 1]})
+[2024-05-31 01:37:47,551] [INFO] [launch.py:164:main] dist_world_size=2
+[2024-05-31 01:37:47,551] [INFO] [launch.py:168:main] Setting CUDA_VISIBLE_DEVICES=0,1
+[2024-05-31 01:37:47,552] [INFO] [launch.py:256:main] process 1201986 spawned with command: ['/home/chanho/anaconda3/envs/COMEDY/bin/python', '-u', 'training/EPISODE/main.py', '--local_rank=0', '--model_name', 'gemma', '--model_name_or_path', '/home/chanho/Model/SHARE/Refactorizing/result/output_path', '--train_data_path', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_with_tag.json', '--valid_data_path', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/valid_with_tag.json', '--per_device_train_batch_size', '1', '--per_device_eval_batch_size', '1', '--data_output_path', '/home/chanho/Model/SHARE/Refactorizing/result/output_path/data', '--max_seq_len', '2048', '--learning_rate', '1e-5', '--weight_decay', '0.1', '--num_train_epochs', '50', '--num_train_samples', '14255', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_with_tag.json', '--gradient_accumulation_steps', '1', '--lr_scheduler_type', 'cosine', '--num_warmup_steps', '1000', '--seed', '42', '--zero_stage', '2', '--save_interval', '1000', '--eval_interval', '100', '--output_dir', '/home/chanho/Model/SHARE/Refactorizing/result/output_path/2024-05-31-01.37.42']
+[2024-05-31 01:37:47,552] [INFO] [launch.py:256:main] process 1201987 spawned with command: ['/home/chanho/anaconda3/envs/COMEDY/bin/python', '-u', 'training/EPISODE/main.py', '--local_rank=1', '--model_name', 'gemma', '--model_name_or_path', '/home/chanho/Model/SHARE/Refactorizing/result/output_path', '--train_data_path', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_with_tag.json', '--valid_data_path', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/valid_with_tag.json', '--per_device_train_batch_size', '1', '--per_device_eval_batch_size', '1', '--data_output_path', '/home/chanho/Model/SHARE/Refactorizing/result/output_path/data', '--max_seq_len', '2048', '--learning_rate', '1e-5', '--weight_decay', '0.1', '--num_train_epochs', '50', '--num_train_samples', '14255', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_with_tag.json', '--gradient_accumulation_steps', '1', '--lr_scheduler_type', 'cosine', '--num_warmup_steps', '1000', '--seed', '42', '--zero_stage', '2', '--save_interval', '1000', '--eval_interval', '100', '--output_dir', '/home/chanho/Model/SHARE/Refactorizing/result/output_path/2024-05-31-01.37.42']
+[2024-05-31 01:37:50,142] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-05-31 01:37:50,142] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/transformers/deepspeed.py:23: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
+  warnings.warn(
+Namespace(data_path=['Dahoas/rm-static'], data_split='6,2,2', data_output_path='/home/chanho/Model/SHARE/Refactorizing/result/output_path/data', model_name_or_path='/home/chanho/Model/SHARE/Refactorizing/result/output_path', model_name='gemma', per_device_train_batch_size=1, per_device_eval_batch_size=1, max_seq_len=2048, learning_rate=1e-05, weight_decay=0.1, num_train_epochs=50, gradient_accumulation_steps=1, lr_scheduler_type=<SchedulerType.COSINE: 'cosine'>, num_warmup_steps=1000, output_dir='/home/chanho/Model/SHARE/Refactorizing/result/output_path/2024-05-31-01.37.42', seed=42, local_rank=0, gradient_checkpointing=False, offload=False, zero_stage=2, lora_dim=0, lora_module_name='decoder.layers.', only_optimize_lora=False, save_interval=1000, log_interval=10, eval_interval=100, train_data_path='/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_with_tag.json', valid_data_path='/home/chanho/Model/SHARE/Refactorizing/result/dataset/valid_with_tag.json', num_train_samples=14255, deepspeed=False, deepspeed_config=None, deepscale=False, deepscale_config=None)
+['/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_with_tag.json']
+[2024-05-31 01:37:50,574] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-05-31 01:37:50,574] [INFO] [comm.py:668:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/transformers/deepspeed.py:23: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
+  warnings.warn(
+Namespace(data_path=['Dahoas/rm-static'], data_split='6,2,2', data_output_path='/home/chanho/Model/SHARE/Refactorizing/result/output_path/data', model_name_or_path='/home/chanho/Model/SHARE/Refactorizing/result/output_path', model_name='gemma', per_device_train_batch_size=1, per_device_eval_batch_size=1, max_seq_len=2048, learning_rate=1e-05, weight_decay=0.1, num_train_epochs=50, gradient_accumulation_steps=1, lr_scheduler_type=<SchedulerType.COSINE: 'cosine'>, num_warmup_steps=1000, output_dir='/home/chanho/Model/SHARE/Refactorizing/result/output_path/2024-05-31-01.37.42', seed=42, local_rank=1, gradient_checkpointing=False, offload=False, zero_stage=2, lora_dim=0, lora_module_name='decoder.layers.', only_optimize_lora=False, save_interval=1000, log_interval=10, eval_interval=100, train_data_path='/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_with_tag.json', valid_data_path='/home/chanho/Model/SHARE/Refactorizing/result/dataset/valid_with_tag.json', num_train_samples=14255, deepspeed=False, deepspeed_config=None, deepscale=False, deepscale_config=None)
+['/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_with_tag.json']
+[2024-05-31 01:37:51,118] [INFO] [comm.py:637:init_distributed] cdb=None
+This model is gemma
+This model is gemma
+/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+`config.hidden_act` is ignored, you should use `config.hidden_activation` instead.
+Gemma's activation function will be set to `gelu_pytorch_tanh`. Please, use
+`config.hidden_activation` if you want to override this behaviour.
+See https://github.com/huggingface/transformers/pull/29402 for more details.
+`config.hidden_act` is ignored, you should use `config.hidden_activation` instead.
+Gemma's activation function will be set to `gelu_pytorch_tanh`. Please, use
+`config.hidden_activation` if you want to override this behaviour.
+See https://github.com/huggingface/transformers/pull/29402 for more details.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.37s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.52it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.31it/s]
+
+Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.58s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.35it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.15it/s]
+trainable params: 1,843,200 || all params: 2,508,015,616 || trainable%: 0.073492365368111
+trainable params: 1,843,200 || all params: 2,508,015,616 || trainable%: 0.073492365368111
+
+Generating train split: 0 examples [00:00, ? examples/s]
+Generating train split: 1685 examples [00:00, 183683.39 examples/s]
+
+Map (num_proc=10):   0%|          | 0/1685 [00:00<?, ? examples/s]
+Map (num_proc=10):   0%|          | 0/1685 [00:00<?, ? examples/s]
+Map (num_proc=10):   0%|          | 0/1685 [00:01<?, ? examples/s]
+Map (num_proc=10):   0%|          | 0/1685 [00:04<?, ? examples/s]
+Map (num_proc=10):   0%|          | 0/1685 [00:05<?, ? examples/s]
+Map (num_proc=10):   0%|          | 0/1685 [00:06<?, ? examples/s]
+Map (num_proc=10):   0%|          | 0/1685 [00:06<?, ? examples/s]
+Map (num_proc=10):   0%|          | 0/1685 [00:07<?, ? examples/s]
+Map (num_proc=10):   0%|          | 0/1685 [00:07<?, ? examples/s]
+Map (num_proc=10):   0%|          | 0/1685 [00:08<?, ? examples/s]
+Map (num_proc=10):   0%|          | 0/1685 [00:08<?, ? examples/s]
+Map (num_proc=10):   0%|          | 0/1685 [00:08<?, ? examples/s]
+Map (num_proc=10):   0%|          | 0/1685 [00:08<?, ? examples/s]
+Map (num_proc=10):   0%|          | 0/1685 [00:09<?, ? examples/s]
+Map (num_proc=10):   0%|          | 0/1685 [00:09<?, ? examples/s]
+Map (num_proc=10):   0%|          | 0/1685 [00:09<?, ? examples/s]
+Map (num_proc=10):   0%|          | 0/1685 [00:09<?, ? examples/s]
+Map (num_proc=10):   0%|          | 0/1685 [00:09<?, ? examples/s]
+Map (num_proc=10):   0%|          | 0/1685 [00:09<?, ? examples/s]
+Map (num_proc=10):   0%|          | 0/1685 [00:09<?, ? examples/s]
+Map (num_proc=10):   0%|          | 0/1685 [00:09<?, ? examples/s]
+Map (num_proc=10):   0%|          | 0/1685 [00:10<?, ? examples/s]
+
+Map (num_proc=10):   0%|          | 0/1685 [00:10<?, ? examples/s]
+[rank1]: multiprocess.pool.RemoteTraceback: 
+[rank1]: """
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/multiprocess/pool.py", line 125, in worker
+[rank1]:     result = (True, func(*args, **kwds))
+[rank1]:                     ^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/datasets/utils/py_utils.py", line 675, in _write_generator_to_queue
+[rank1]:     for i, result in enumerate(func(**kwargs)):
+[rank1]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 3517, in _map_single
+[rank1]:     example = apply_function_on_filtered_inputs(example, i, offset=offset)
+[rank1]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 3416, in apply_function_on_filtered_inputs
+[rank1]:     processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+[rank1]:                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/home/chanho/Model/SHARE/Refactorizing/training/utils/data/data_utils.py", line 174, in tokenize_function
+[rank1]:     text = examples['text']
+[rank1]:            ~~~~~~~~^^^^^^^^
+[rank1]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/datasets/formatting/formatting.py", line 271, in __getitem__
+[rank1]:     value = self.data[key]
+[rank1]:             ~~~~~~~~~^^^^^
+[rank1]: KeyError: 'text'
+[rank1]: """
+
+[rank1]: The above exception was the direct cause of the following exception:
+
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/home/chanho/Model/SHARE/Refactorizing/training/EPISODE/main.py", line 365, in <module>
+[rank1]:     main()
+[rank1]:   File "/home/chanho/Model/SHARE/Refactorizing/training/EPISODE/main.py", line 221, in main
+[rank1]:     eval_dataset = get_unsupervised_data(args, tokenizer, args.valid_data_path, train_phase=train_phase)
+[rank1]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/home/chanho/Model/SHARE/Refactorizing/training/utils/data/data_utils.py", line 200, in get_unsupervised_data
+[rank1]:     unsupervised_raw_datasets = unsupervised_raw_datasets.map(tokenize_function, remove_columns=data_columns, num_proc=10)
+[rank1]:                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 602, in wrapper
+[rank1]:     out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+[rank1]:                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 567, in wrapper
+[rank1]:     out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+[rank1]:                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 3248, in map
+[rank1]:     for rank, done, content in iflatmap_unordered(
+[rank1]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/datasets/utils/py_utils.py", line 715, in iflatmap_unordered
+[rank1]:     [async_result.get(timeout=0.05) for async_result in async_results]
+[rank1]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/datasets/utils/py_utils.py", line 715, in <listcomp>
+[rank1]:     [async_result.get(timeout=0.05) for async_result in async_results]
+[rank1]:      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/multiprocess/pool.py", line 774, in get
+[rank1]:     raise self._value
+[rank1]: KeyError: 'text'
+[rank0]: multiprocess.pool.RemoteTraceback: 
+[rank0]: """
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/multiprocess/pool.py", line 125, in worker
+[rank0]:     result = (True, func(*args, **kwds))
+[rank0]:                     ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/datasets/utils/py_utils.py", line 675, in _write_generator_to_queue
+[rank0]:     for i, result in enumerate(func(**kwargs)):
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 3517, in _map_single
+[rank0]:     example = apply_function_on_filtered_inputs(example, i, offset=offset)
+[rank0]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 3416, in apply_function_on_filtered_inputs
+[rank0]:     processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+[rank0]:                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/chanho/Model/SHARE/Refactorizing/training/utils/data/data_utils.py", line 174, in tokenize_function
+[rank0]:     text = examples['text']
+[rank0]:            ~~~~~~~~^^^^^^^^
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/datasets/formatting/formatting.py", line 271, in __getitem__
+[rank0]:     value = self.data[key]
+[rank0]:             ~~~~~~~~~^^^^^
+[rank0]: KeyError: 'text'
+[rank0]: """
+
+[rank0]: The above exception was the direct cause of the following exception:
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/chanho/Model/SHARE/Refactorizing/training/EPISODE/main.py", line 365, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/chanho/Model/SHARE/Refactorizing/training/EPISODE/main.py", line 221, in main
+[rank0]:     eval_dataset = get_unsupervised_data(args, tokenizer, args.valid_data_path, train_phase=train_phase)
+[rank0]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/chanho/Model/SHARE/Refactorizing/training/utils/data/data_utils.py", line 200, in get_unsupervised_data
+[rank0]:     unsupervised_raw_datasets = unsupervised_raw_datasets.map(tokenize_function, remove_columns=data_columns, num_proc=10)
+[rank0]:                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 602, in wrapper
+[rank0]:     out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+[rank0]:                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 567, in wrapper
+[rank0]:     out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+[rank0]:                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 3248, in map
+[rank0]:     for rank, done, content in iflatmap_unordered(
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/datasets/utils/py_utils.py", line 715, in iflatmap_unordered
+[rank0]:     [async_result.get(timeout=0.05) for async_result in async_results]
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/datasets/utils/py_utils.py", line 715, in <listcomp>
+[rank0]:     [async_result.get(timeout=0.05) for async_result in async_results]
+[rank0]:      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/multiprocess/pool.py", line 774, in get
+[rank0]:     raise self._value
+[rank0]: KeyError: 'text'
+[2024-05-31 01:38:13,555] [INFO] [launch.py:319:sigkill_handler] Killing subprocess 1201986
+[2024-05-31 01:38:13,555] [INFO] [launch.py:319:sigkill_handler] Killing subprocess 1201987
+[2024-05-31 01:38:13,577] [ERROR] [launch.py:325:sigkill_handler] ['/home/chanho/anaconda3/envs/COMEDY/bin/python', '-u', 'training/EPISODE/main.py', '--local_rank=1', '--model_name', 'gemma', '--model_name_or_path', '/home/chanho/Model/SHARE/Refactorizing/result/output_path', '--train_data_path', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_with_tag.json', '--valid_data_path', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/valid_with_tag.json', '--per_device_train_batch_size', '1', '--per_device_eval_batch_size', '1', '--data_output_path', '/home/chanho/Model/SHARE/Refactorizing/result/output_path/data', '--max_seq_len', '2048', '--learning_rate', '1e-5', '--weight_decay', '0.1', '--num_train_epochs', '50', '--num_train_samples', '14255', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_with_tag.json', '--gradient_accumulation_steps', '1', '--lr_scheduler_type', 'cosine', '--num_warmup_steps', '1000', '--seed', '42', '--zero_stage', '2', '--save_interval', '1000', '--eval_interval', '100', '--output_dir', '/home/chanho/Model/SHARE/Refactorizing/result/output_path/2024-05-31-01.37.42'] exits with return code = 1

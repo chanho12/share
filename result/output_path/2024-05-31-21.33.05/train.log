@@ -1,0 +1,88 @@
+[2024-05-31 21:33:07,701] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[2024-05-31 21:33:08,269] [WARNING] [runner.py:202:fetch_hostfile] Unable to find hostfile, will proceed with training with local resources only.
+[2024-05-31 21:33:08,269] [INFO] [runner.py:568:main] cmd = /home/chanho/anaconda3/envs/COMEDY/bin/python -u -m deepspeed.launcher.launch --world_info=eyJsb2NhbGhvc3QiOiBbMCwgMV19 --master_addr=127.0.0.1 --master_port=12341 --enable_each_rank_log=None training/EPISODE/main.py --model_name /home/chanho/Model/SHARE/Refactorizing/result/output_path --model_name_or_path --train_data_path /home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json --valid_data_path /home/chanho/Model/SHARE/Refactorizing/result/dataset/valid_without_tag.json --per_device_train_batch_size 1 --per_device_eval_batch_size 1 --data_output_path /home/chanho/Model/SHARE/Refactorizing/result/output_path/data --max_seq_len 2048 --learning_rate 1e-5 --weight_decay 0.1 --num_train_epochs 50 --num_train_samples 10735 /home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json --gradient_accumulation_steps 1 --lr_scheduler_type cosine --num_warmup_steps 1000 --seed 42 --zero_stage 2 --save_interval 1000 --eval_interval 100 --output_dir /home/chanho/Model/SHARE/Refactorizing/result/output_path/2024-05-31-21.33.05
+[2024-05-31 21:33:09,618] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[2024-05-31 21:33:10,151] [INFO] [launch.py:146:main] WORLD INFO DICT: {'localhost': [0, 1]}
+[2024-05-31 21:33:10,151] [INFO] [launch.py:152:main] nnodes=1, num_local_procs=2, node_rank=0
+[2024-05-31 21:33:10,151] [INFO] [launch.py:163:main] global_rank_mapping=defaultdict(<class 'list'>, {'localhost': [0, 1]})
+[2024-05-31 21:33:10,151] [INFO] [launch.py:164:main] dist_world_size=2
+[2024-05-31 21:33:10,151] [INFO] [launch.py:168:main] Setting CUDA_VISIBLE_DEVICES=0,1
+[2024-05-31 21:33:10,152] [INFO] [launch.py:256:main] process 1555516 spawned with command: ['/home/chanho/anaconda3/envs/COMEDY/bin/python', '-u', 'training/EPISODE/main.py', '--local_rank=0', '--model_name', '/home/chanho/Model/SHARE/Refactorizing/result/output_path', '--model_name_or_path', '--train_data_path', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json', '--valid_data_path', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/valid_without_tag.json', '--per_device_train_batch_size', '1', '--per_device_eval_batch_size', '1', '--data_output_path', '/home/chanho/Model/SHARE/Refactorizing/result/output_path/data', '--max_seq_len', '2048', '--learning_rate', '1e-5', '--weight_decay', '0.1', '--num_train_epochs', '50', '--num_train_samples', '10735', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json', '--gradient_accumulation_steps', '1', '--lr_scheduler_type', 'cosine', '--num_warmup_steps', '1000', '--seed', '42', '--zero_stage', '2', '--save_interval', '1000', '--eval_interval', '100', '--output_dir', '/home/chanho/Model/SHARE/Refactorizing/result/output_path/2024-05-31-21.33.05']
+[2024-05-31 21:33:10,152] [INFO] [launch.py:256:main] process 1555517 spawned with command: ['/home/chanho/anaconda3/envs/COMEDY/bin/python', '-u', 'training/EPISODE/main.py', '--local_rank=1', '--model_name', '/home/chanho/Model/SHARE/Refactorizing/result/output_path', '--model_name_or_path', '--train_data_path', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json', '--valid_data_path', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/valid_without_tag.json', '--per_device_train_batch_size', '1', '--per_device_eval_batch_size', '1', '--data_output_path', '/home/chanho/Model/SHARE/Refactorizing/result/output_path/data', '--max_seq_len', '2048', '--learning_rate', '1e-5', '--weight_decay', '0.1', '--num_train_epochs', '50', '--num_train_samples', '10735', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json', '--gradient_accumulation_steps', '1', '--lr_scheduler_type', 'cosine', '--num_warmup_steps', '1000', '--seed', '42', '--zero_stage', '2', '--save_interval', '1000', '--eval_interval', '100', '--output_dir', '/home/chanho/Model/SHARE/Refactorizing/result/output_path/2024-05-31-21.33.05']
+[2024-05-31 21:33:12,543] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[2024-05-31 21:33:12,632] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/transformers/deepspeed.py:23: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
+  warnings.warn(
+usage: main.py [-h] [--data_path [DATA_PATH ...]] [--data_split DATA_SPLIT]
+               [--data_output_path DATA_OUTPUT_PATH] --model_name_or_path
+               MODEL_NAME_OR_PATH --model_name MODEL_NAME
+               [--per_device_train_batch_size PER_DEVICE_TRAIN_BATCH_SIZE]
+               [--per_device_eval_batch_size PER_DEVICE_EVAL_BATCH_SIZE]
+               [--max_seq_len MAX_SEQ_LEN] [--learning_rate LEARNING_RATE]
+               [--weight_decay WEIGHT_DECAY]
+               [--num_train_epochs NUM_TRAIN_EPOCHS]
+               [--gradient_accumulation_steps GRADIENT_ACCUMULATION_STEPS]
+               [--lr_scheduler_type {linear,cosine,cosine_with_restarts,polynomial,constant,constant_with_warmup}]
+               [--num_warmup_steps NUM_WARMUP_STEPS] [--output_dir OUTPUT_DIR]
+               [--seed SEED] [--local_rank LOCAL_RANK]
+               [--gradient_checkpointing] [--offload]
+               [--zero_stage ZERO_STAGE] [--lora_dim LORA_DIM]
+               [--lora_module_name LORA_MODULE_NAME] [--only_optimize_lora]
+               [--save_interval SAVE_INTERVAL] [--log_interval LOG_INTERVAL]
+               [--eval_interval EVAL_INTERVAL] --train_data_path
+               TRAIN_DATA_PATH --valid_data_path VALID_DATA_PATH
+               --num_train_samples NUM_TRAIN_SAMPLES [--deepspeed]
+               [--deepspeed_config DEEPSPEED_CONFIG] [--deepscale]
+               [--deepscale_config DEEPSCALE_CONFIG]
+main.py: error: argument --model_name_or_path: expected one argument
+/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/transformers/deepspeed.py:23: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
+  warnings.warn(
+usage: main.py [-h] [--data_path [DATA_PATH ...]] [--data_split DATA_SPLIT]
+               [--data_output_path DATA_OUTPUT_PATH] --model_name_or_path
+               MODEL_NAME_OR_PATH --model_name MODEL_NAME
+               [--per_device_train_batch_size PER_DEVICE_TRAIN_BATCH_SIZE]
+               [--per_device_eval_batch_size PER_DEVICE_EVAL_BATCH_SIZE]
+               [--max_seq_len MAX_SEQ_LEN] [--learning_rate LEARNING_RATE]
+               [--weight_decay WEIGHT_DECAY]
+               [--num_train_epochs NUM_TRAIN_EPOCHS]
+               [--gradient_accumulation_steps GRADIENT_ACCUMULATION_STEPS]
+               [--lr_scheduler_type {linear,cosine,cosine_with_restarts,polynomial,constant,constant_with_warmup}]
+               [--num_warmup_steps NUM_WARMUP_STEPS] [--output_dir OUTPUT_DIR]
+               [--seed SEED] [--local_rank LOCAL_RANK]
+               [--gradient_checkpointing] [--offload]
+               [--zero_stage ZERO_STAGE] [--lora_dim LORA_DIM]
+               [--lora_module_name LORA_MODULE_NAME] [--only_optimize_lora]
+               [--save_interval SAVE_INTERVAL] [--log_interval LOG_INTERVAL]
+               [--eval_interval EVAL_INTERVAL] --train_data_path
+               TRAIN_DATA_PATH --valid_data_path VALID_DATA_PATH
+               --num_train_samples NUM_TRAIN_SAMPLES [--deepspeed]
+               [--deepspeed_config DEEPSPEED_CONFIG] [--deepscale]
+               [--deepscale_config DEEPSCALE_CONFIG]
+main.py: error: argument --model_name_or_path: expected one argument
+[2024-05-31 21:33:14,153] [INFO] [launch.py:319:sigkill_handler] Killing subprocess 1555516
+[2024-05-31 21:33:14,164] [INFO] [launch.py:319:sigkill_handler] Killing subprocess 1555517
+[2024-05-31 21:33:14,164] [ERROR] [launch.py:325:sigkill_handler] ['/home/chanho/anaconda3/envs/COMEDY/bin/python', '-u', 'training/EPISODE/main.py', '--local_rank=1', '--model_name', '/home/chanho/Model/SHARE/Refactorizing/result/output_path', '--model_name_or_path', '--train_data_path', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json', '--valid_data_path', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/valid_without_tag.json', '--per_device_train_batch_size', '1', '--per_device_eval_batch_size', '1', '--data_output_path', '/home/chanho/Model/SHARE/Refactorizing/result/output_path/data', '--max_seq_len', '2048', '--learning_rate', '1e-5', '--weight_decay', '0.1', '--num_train_epochs', '50', '--num_train_samples', '10735', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json', '--gradient_accumulation_steps', '1', '--lr_scheduler_type', 'cosine', '--num_warmup_steps', '1000', '--seed', '42', '--zero_stage', '2', '--save_interval', '1000', '--eval_interval', '100', '--output_dir', '/home/chanho/Model/SHARE/Refactorizing/result/output_path/2024-05-31-21.33.05'] exits with return code = 2

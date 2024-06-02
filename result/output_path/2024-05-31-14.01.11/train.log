@@ -1,0 +1,82 @@
+[2024-05-31 14:01:13,389] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[2024-05-31 14:01:14,305] [WARNING] [runner.py:202:fetch_hostfile] Unable to find hostfile, will proceed with training with local resources only.
+[2024-05-31 14:01:14,305] [INFO] [runner.py:568:main] cmd = /home/chanho/anaconda3/envs/COMEDY/bin/python -u -m deepspeed.launcher.launch --world_info=eyJsb2NhbGhvc3QiOiBbMCwgMV19 --master_addr=127.0.0.1 --master_port=12340 --enable_each_rank_log=None training/EPISODE/main.py --model_name gemma --model_name_or_path /home/chanho/Model/SHARE/Refactorizing/result/output_path --train_data_path /home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json --valid_data_path /home/chanho/Model/SHARE/Refactorizing/result/dataset/valid_without_tag.json --per_device_train_batch_size 1 --per_device_eval_batch_size 1 --data_output_path /home/chanho/Model/SHARE/Refactorizing/result/output_path/data --max_seq_len 2048 --learning_rate 1e-5 --weight_decay 0.1 --num_train_epochs 50 --num_train_samples 14255 /home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json --gradient_accumulation_steps 1 --lr_scheduler_type cosine --num_warmup_steps 1000 --seed 42 --zero_stage 2 --save_interval 1000 --eval_interval 100 --output_dir /home/chanho/Model/SHARE/Refactorizing/result/output_path/2024-05-31-14.01.11
+[2024-05-31 14:01:15,772] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[2024-05-31 14:01:16,467] [INFO] [launch.py:146:main] WORLD INFO DICT: {'localhost': [0, 1]}
+[2024-05-31 14:01:16,467] [INFO] [launch.py:152:main] nnodes=1, num_local_procs=2, node_rank=0
+[2024-05-31 14:01:16,467] [INFO] [launch.py:163:main] global_rank_mapping=defaultdict(<class 'list'>, {'localhost': [0, 1]})
+[2024-05-31 14:01:16,467] [INFO] [launch.py:164:main] dist_world_size=2
+[2024-05-31 14:01:16,467] [INFO] [launch.py:168:main] Setting CUDA_VISIBLE_DEVICES=0,1
+[2024-05-31 14:01:16,467] [INFO] [launch.py:256:main] process 1413429 spawned with command: ['/home/chanho/anaconda3/envs/COMEDY/bin/python', '-u', 'training/EPISODE/main.py', '--local_rank=0', '--model_name', 'gemma', '--model_name_or_path', '/home/chanho/Model/SHARE/Refactorizing/result/output_path', '--train_data_path', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json', '--valid_data_path', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/valid_without_tag.json', '--per_device_train_batch_size', '1', '--per_device_eval_batch_size', '1', '--data_output_path', '/home/chanho/Model/SHARE/Refactorizing/result/output_path/data', '--max_seq_len', '2048', '--learning_rate', '1e-5', '--weight_decay', '0.1', '--num_train_epochs', '50', '--num_train_samples', '14255', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json', '--gradient_accumulation_steps', '1', '--lr_scheduler_type', 'cosine', '--num_warmup_steps', '1000', '--seed', '42', '--zero_stage', '2', '--save_interval', '1000', '--eval_interval', '100', '--output_dir', '/home/chanho/Model/SHARE/Refactorizing/result/output_path/2024-05-31-14.01.11']
+[2024-05-31 14:01:16,468] [INFO] [launch.py:256:main] process 1413430 spawned with command: ['/home/chanho/anaconda3/envs/COMEDY/bin/python', '-u', 'training/EPISODE/main.py', '--local_rank=1', '--model_name', 'gemma', '--model_name_or_path', '/home/chanho/Model/SHARE/Refactorizing/result/output_path', '--train_data_path', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json', '--valid_data_path', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/valid_without_tag.json', '--per_device_train_batch_size', '1', '--per_device_eval_batch_size', '1', '--data_output_path', '/home/chanho/Model/SHARE/Refactorizing/result/output_path/data', '--max_seq_len', '2048', '--learning_rate', '1e-5', '--weight_decay', '0.1', '--num_train_epochs', '50', '--num_train_samples', '14255', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json', '--gradient_accumulation_steps', '1', '--lr_scheduler_type', 'cosine', '--num_warmup_steps', '1000', '--seed', '42', '--zero_stage', '2', '--save_interval', '1000', '--eval_interval', '100', '--output_dir', '/home/chanho/Model/SHARE/Refactorizing/result/output_path/2024-05-31-14.01.11']
+[2024-05-31 14:01:19,043] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-05-31 14:01:19,045] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/transformers/deepspeed.py:23: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
+  warnings.warn(
+Namespace(data_path=['Dahoas/rm-static'], data_split='6,2,2', data_output_path='/home/chanho/Model/SHARE/Refactorizing/result/output_path/data', model_name_or_path='/home/chanho/Model/SHARE/Refactorizing/result/output_path', model_name='gemma', per_device_train_batch_size=1, per_device_eval_batch_size=1, max_seq_len=2048, learning_rate=1e-05, weight_decay=0.1, num_train_epochs=50, gradient_accumulation_steps=1, lr_scheduler_type=<SchedulerType.COSINE: 'cosine'>, num_warmup_steps=1000, output_dir='/home/chanho/Model/SHARE/Refactorizing/result/output_path/2024-05-31-14.01.11', seed=42, local_rank=0, gradient_checkpointing=False, offload=False, zero_stage=2, lora_dim=0, lora_module_name='decoder.layers.', only_optimize_lora=False, save_interval=1000, log_interval=10, eval_interval=100, train_data_path='/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json', valid_data_path='/home/chanho/Model/SHARE/Refactorizing/result/dataset/valid_without_tag.json', num_train_samples=14255, deepspeed=False, deepspeed_config=None, deepscale=False, deepscale_config=None)
+['/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json']
+[2024-05-31 14:01:19,468] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-05-31 14:01:19,468] [INFO] [comm.py:668:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[W socket.cpp:464] [c10d] The server socket has failed to bind to [::]:12340 (errno: 98 - Address already in use).
+[W socket.cpp:464] [c10d] The server socket has failed to bind to 0.0.0.0:12340 (errno: 98 - Address already in use).
+[E socket.cpp:500] [c10d] The server socket has failed to listen on any local network address.
+/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/transformers/deepspeed.py:23: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
+  warnings.warn(
+Namespace(data_path=['Dahoas/rm-static'], data_split='6,2,2', data_output_path='/home/chanho/Model/SHARE/Refactorizing/result/output_path/data', model_name_or_path='/home/chanho/Model/SHARE/Refactorizing/result/output_path', model_name='gemma', per_device_train_batch_size=1, per_device_eval_batch_size=1, max_seq_len=2048, learning_rate=1e-05, weight_decay=0.1, num_train_epochs=50, gradient_accumulation_steps=1, lr_scheduler_type=<SchedulerType.COSINE: 'cosine'>, num_warmup_steps=1000, output_dir='/home/chanho/Model/SHARE/Refactorizing/result/output_path/2024-05-31-14.01.11', seed=42, local_rank=1, gradient_checkpointing=False, offload=False, zero_stage=2, lora_dim=0, lora_module_name='decoder.layers.', only_optimize_lora=False, save_interval=1000, log_interval=10, eval_interval=100, train_data_path='/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json', valid_data_path='/home/chanho/Model/SHARE/Refactorizing/result/dataset/valid_without_tag.json', num_train_samples=14255, deepspeed=False, deepspeed_config=None, deepscale=False, deepscale_config=None)
+['/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json']
+Traceback (most recent call last):
+  File "/home/chanho/Model/SHARE/Refactorizing/training/EPISODE/main.py", line 368, in <module>
+    main()
+  File "/home/chanho/Model/SHARE/Refactorizing/training/EPISODE/main.py", line 198, in main
+    deepspeed.init_distributed()
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/deepspeed/comm/comm.py", line 670, in init_distributed
+    cdb = TorchBackend(dist_backend, timeout, init_method, rank, world_size)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/deepspeed/comm/torch.py", line 112, in __init__
+    self.init_process_group(backend, timeout, init_method, rank, world_size)
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/deepspeed/comm/torch.py", line 142, in init_process_group
+    torch.distributed.init_process_group(backend,
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/torch/distributed/c10d_logger.py", line 75, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/torch/distributed/c10d_logger.py", line 89, in wrapper
+    func_return = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py", line 1305, in init_process_group
+    store, rank, world_size = next(rendezvous_iterator)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/torch/distributed/rendezvous.py", line 246, in _env_rendezvous_handler
+    store = _create_c10d_store(master_addr, master_port, rank, world_size, timeout, use_libuv)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/torch/distributed/rendezvous.py", line 174, in _create_c10d_store
+    return TCPStore(
+           ^^^^^^^^^
+torch.distributed.DistNetworkError: The server socket has failed to listen on any local network address. The server socket has failed to bind to [::]:12340 (errno: 98 - Address already in use). The server socket has failed to bind to 0.0.0.0:12340 (errno: 98 - Address already in use).
+[2024-05-31 14:01:19,578] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-05-31 14:01:20,468] [INFO] [launch.py:319:sigkill_handler] Killing subprocess 1413429
+[2024-05-31 14:01:20,468] [INFO] [launch.py:319:sigkill_handler] Killing subprocess 1413430
+[2024-05-31 14:01:20,851] [ERROR] [launch.py:325:sigkill_handler] ['/home/chanho/anaconda3/envs/COMEDY/bin/python', '-u', 'training/EPISODE/main.py', '--local_rank=1', '--model_name', 'gemma', '--model_name_or_path', '/home/chanho/Model/SHARE/Refactorizing/result/output_path', '--train_data_path', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json', '--valid_data_path', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/valid_without_tag.json', '--per_device_train_batch_size', '1', '--per_device_eval_batch_size', '1', '--data_output_path', '/home/chanho/Model/SHARE/Refactorizing/result/output_path/data', '--max_seq_len', '2048', '--learning_rate', '1e-5', '--weight_decay', '0.1', '--num_train_epochs', '50', '--num_train_samples', '14255', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json', '--gradient_accumulation_steps', '1', '--lr_scheduler_type', 'cosine', '--num_warmup_steps', '1000', '--seed', '42', '--zero_stage', '2', '--save_interval', '1000', '--eval_interval', '100', '--output_dir', '/home/chanho/Model/SHARE/Refactorizing/result/output_path/2024-05-31-14.01.11'] exits with return code = 1

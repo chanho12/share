@@ -1,0 +1,298 @@
+[2024-05-31 21:33:35,528] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[2024-05-31 21:33:36,425] [WARNING] [runner.py:202:fetch_hostfile] Unable to find hostfile, will proceed with training with local resources only.
+[2024-05-31 21:33:36,425] [INFO] [runner.py:568:main] cmd = /home/chanho/anaconda3/envs/COMEDY/bin/python -u -m deepspeed.launcher.launch --world_info=eyJsb2NhbGhvc3QiOiBbMCwgMV19 --master_addr=127.0.0.1 --master_port=12341 --enable_each_rank_log=None training/EPISODE/main.py --model_name quan_llama --model_name_or_path /home/chanho/Model/SHARE/Refactorizing/result/output_path --train_data_path /home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json --valid_data_path /home/chanho/Model/SHARE/Refactorizing/result/dataset/valid_without_tag.json --per_device_train_batch_size 1 --per_device_eval_batch_size 1 --data_output_path /home/chanho/Model/SHARE/Refactorizing/result/output_path/data --max_seq_len 2048 --learning_rate 1e-5 --weight_decay 0.1 --num_train_epochs 50 --num_train_samples 10735 /home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json --gradient_accumulation_steps 1 --lr_scheduler_type cosine --num_warmup_steps 1000 --seed 42 --zero_stage 2 --save_interval 1000 --eval_interval 100 --output_dir /home/chanho/Model/SHARE/Refactorizing/result/output_path/2024-05-31-21.33.33
+[2024-05-31 21:33:37,906] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[2024-05-31 21:33:38,440] [INFO] [launch.py:146:main] WORLD INFO DICT: {'localhost': [0, 1]}
+[2024-05-31 21:33:38,440] [INFO] [launch.py:152:main] nnodes=1, num_local_procs=2, node_rank=0
+[2024-05-31 21:33:38,440] [INFO] [launch.py:163:main] global_rank_mapping=defaultdict(<class 'list'>, {'localhost': [0, 1]})
+[2024-05-31 21:33:38,440] [INFO] [launch.py:164:main] dist_world_size=2
+[2024-05-31 21:33:38,440] [INFO] [launch.py:168:main] Setting CUDA_VISIBLE_DEVICES=0,1
+[2024-05-31 21:33:38,440] [INFO] [launch.py:256:main] process 1555882 spawned with command: ['/home/chanho/anaconda3/envs/COMEDY/bin/python', '-u', 'training/EPISODE/main.py', '--local_rank=0', '--model_name', 'quan_llama', '--model_name_or_path', '/home/chanho/Model/SHARE/Refactorizing/result/output_path', '--train_data_path', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json', '--valid_data_path', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/valid_without_tag.json', '--per_device_train_batch_size', '1', '--per_device_eval_batch_size', '1', '--data_output_path', '/home/chanho/Model/SHARE/Refactorizing/result/output_path/data', '--max_seq_len', '2048', '--learning_rate', '1e-5', '--weight_decay', '0.1', '--num_train_epochs', '50', '--num_train_samples', '10735', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json', '--gradient_accumulation_steps', '1', '--lr_scheduler_type', 'cosine', '--num_warmup_steps', '1000', '--seed', '42', '--zero_stage', '2', '--save_interval', '1000', '--eval_interval', '100', '--output_dir', '/home/chanho/Model/SHARE/Refactorizing/result/output_path/2024-05-31-21.33.33']
+[2024-05-31 21:33:38,441] [INFO] [launch.py:256:main] process 1555883 spawned with command: ['/home/chanho/anaconda3/envs/COMEDY/bin/python', '-u', 'training/EPISODE/main.py', '--local_rank=1', '--model_name', 'quan_llama', '--model_name_or_path', '/home/chanho/Model/SHARE/Refactorizing/result/output_path', '--train_data_path', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json', '--valid_data_path', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/valid_without_tag.json', '--per_device_train_batch_size', '1', '--per_device_eval_batch_size', '1', '--data_output_path', '/home/chanho/Model/SHARE/Refactorizing/result/output_path/data', '--max_seq_len', '2048', '--learning_rate', '1e-5', '--weight_decay', '0.1', '--num_train_epochs', '50', '--num_train_samples', '10735', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json', '--gradient_accumulation_steps', '1', '--lr_scheduler_type', 'cosine', '--num_warmup_steps', '1000', '--seed', '42', '--zero_stage', '2', '--save_interval', '1000', '--eval_interval', '100', '--output_dir', '/home/chanho/Model/SHARE/Refactorizing/result/output_path/2024-05-31-21.33.33']
+[2024-05-31 21:33:40,977] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-05-31 21:33:40,984] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/transformers/deepspeed.py:23: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
+  warnings.warn(
+Namespace(data_path=['Dahoas/rm-static'], data_split='6,2,2', data_output_path='/home/chanho/Model/SHARE/Refactorizing/result/output_path/data', model_name_or_path='/home/chanho/Model/SHARE/Refactorizing/result/output_path', model_name='quan_llama', per_device_train_batch_size=1, per_device_eval_batch_size=1, max_seq_len=2048, learning_rate=1e-05, weight_decay=0.1, num_train_epochs=50, gradient_accumulation_steps=1, lr_scheduler_type=<SchedulerType.COSINE: 'cosine'>, num_warmup_steps=1000, output_dir='/home/chanho/Model/SHARE/Refactorizing/result/output_path/2024-05-31-21.33.33', seed=42, local_rank=1, gradient_checkpointing=False, offload=False, zero_stage=2, lora_dim=0, lora_module_name='decoder.layers.', only_optimize_lora=False, save_interval=1000, log_interval=10, eval_interval=100, train_data_path='/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json', valid_data_path='/home/chanho/Model/SHARE/Refactorizing/result/dataset/valid_without_tag.json', num_train_samples=10735, deepspeed=False, deepspeed_config=None, deepscale=False, deepscale_config=None)
+['/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json']
+/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/transformers/deepspeed.py:23: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
+  warnings.warn(
+Namespace(data_path=['Dahoas/rm-static'], data_split='6,2,2', data_output_path='/home/chanho/Model/SHARE/Refactorizing/result/output_path/data', model_name_or_path='/home/chanho/Model/SHARE/Refactorizing/result/output_path', model_name='quan_llama', per_device_train_batch_size=1, per_device_eval_batch_size=1, max_seq_len=2048, learning_rate=1e-05, weight_decay=0.1, num_train_epochs=50, gradient_accumulation_steps=1, lr_scheduler_type=<SchedulerType.COSINE: 'cosine'>, num_warmup_steps=1000, output_dir='/home/chanho/Model/SHARE/Refactorizing/result/output_path/2024-05-31-21.33.33', seed=42, local_rank=0, gradient_checkpointing=False, offload=False, zero_stage=2, lora_dim=0, lora_module_name='decoder.layers.', only_optimize_lora=False, save_interval=1000, log_interval=10, eval_interval=100, train_data_path='/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json', valid_data_path='/home/chanho/Model/SHARE/Refactorizing/result/dataset/valid_without_tag.json', num_train_samples=10735, deepspeed=False, deepspeed_config=None, deepscale=False, deepscale_config=None)
+['/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json']
+[2024-05-31 21:33:41,403] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-05-31 21:33:41,403] [INFO] [comm.py:668:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2024-05-31 21:33:41,721] [INFO] [comm.py:637:init_distributed] cdb=None
+This model is quan_llamaThis model is quan_llama
+
+/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+`low_cpu_mem_usage` was None, now set to True since model is quantized.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]`low_cpu_mem_usage` was None, now set to True since model is quantized.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.61s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.18s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.22s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.43s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  1.94s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.12s/it]
+trainable params: 8,388,608 || all params: 6,746,804,224 || trainable%: 0.12433454005023165
+trainable params: 8,388,608 || all params: 6,746,804,224 || trainable%: 0.12433454005023165
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 1264 examples [00:00, 117102.91 examples/s]
+Map (num_proc=10):   0%|          | 0/1264 [00:00<?, ? examples/s]Map (num_proc=10):   0%|          | 0/1264 [00:00<?, ? examples/s]Map (num_proc=10):   1%|          | 8/1264 [00:00<00:35, 34.91 examples/s]Map (num_proc=10):   9%|▉         | 114/1264 [00:00<00:02, 398.47 examples/s]Map (num_proc=10):  18%|█▊        | 233/1264 [00:00<00:01, 662.77 examples/s]Map (num_proc=10):  30%|███       | 384/1264 [00:00<00:00, 933.91 examples/s]Map (num_proc=10):  39%|███▉      | 497/1264 [00:00<00:00, 861.82 examples/s]Map (num_proc=10):   0%|          | 5/1264 [00:00<02:21,  8.87 examples/s]Map (num_proc=10):   3%|▎         | 42/1264 [00:00<00:15, 79.87 examples/s]Map (num_proc=10):  47%|████▋     | 597/1264 [00:00<00:00, 839.30 examples/s]Map (num_proc=10):   9%|▊         | 110/1264 [00:00<00:05, 210.35 examples/s]Map (num_proc=10):  55%|█████▍    | 695/1264 [00:00<00:00, 845.97 examples/s]Map (num_proc=10):  13%|█▎        | 167/1264 [00:00<00:03, 290.39 examples/s]Map (num_proc=10):  62%|██████▏   | 788/1264 [00:01<00:00, 761.97 examples/s]Map (num_proc=10):  22%|██▏       | 278/1264 [00:01<00:02, 468.41 examples/s]Map (num_proc=10):  69%|██████▉   | 869/1264 [00:01<00:00, 721.39 examples/s]Map (num_proc=10):  27%|██▋       | 341/1264 [00:01<00:01, 494.98 examples/s]Map (num_proc=10):  75%|███████▌  | 949/1264 [00:01<00:00, 691.14 examples/s]Map (num_proc=10):  32%|███▏      | 407/1264 [00:01<00:01, 531.76 examples/s]Map (num_proc=10):  37%|███▋      | 473/1264 [00:01<00:01, 546.13 examples/s]Map (num_proc=10):  81%|████████  | 1024/1264 [00:01<00:00, 637.85 examples/s]Map (num_proc=10):  43%|████▎     | 542/1264 [00:01<00:01, 560.83 examples/s]Map (num_proc=10):  86%|████████▋ | 1093/1264 [00:01<00:00, 597.22 examples/s]Map (num_proc=10):  50%|█████     | 634/1264 [00:01<00:00, 635.98 examples/s]Map (num_proc=10):  92%|█████████▏| 1158/1264 [00:01<00:00, 576.83 examples/s]Map (num_proc=10):  55%|█████▌    | 701/1264 [00:01<00:00, 639.98 examples/s]Map (num_proc=10):  61%|██████    | 770/1264 [00:01<00:00, 644.61 examples/s]Map (num_proc=10):  97%|█████████▋| 1220/1264 [00:01<00:00, 474.65 examples/s]Map (num_proc=10):  67%|██████▋   | 841/1264 [00:01<00:00, 648.99 examples/s]Map (num_proc=10):  72%|███████▏  | 916/1264 [00:01<00:00, 676.77 examples/s]Map (num_proc=10):  78%|███████▊  | 986/1264 [00:02<00:00, 632.46 examples/s]Map (num_proc=10):  84%|████████▍ | 1064/1264 [00:02<00:00, 667.20 examples/s]Map (num_proc=10):  90%|████████▉ | 1134/1264 [00:02<00:00, 667.33 examples/s]Map (num_proc=10):  95%|█████████▌| 1205/1264 [00:02<00:00, 609.67 examples/s]Map (num_proc=10): 100%|██████████| 1264/1264 [00:03<00:00, 408.53 examples/s]
+Map (num_proc=10): 100%|██████████| 1264/1264 [00:03<00:00, 399.19 examples/s]
+Filter (num_proc=10):   0%|          | 0/1264 [00:00<?, ? examples/s]Filter (num_proc=10):   0%|          | 0/1264 [00:00<?, ? examples/s]Filter (num_proc=10):  10%|█         | 127/1264 [00:02<00:20, 56.60 examples/s]Filter (num_proc=10):  30%|███       | 381/1264 [00:02<00:04, 198.61 examples/s]Filter (num_proc=10):  50%|█████     | 634/1264 [00:02<00:01, 368.87 examples/s]Filter (num_proc=10):  80%|████████  | 1012/1264 [00:02<00:00, 698.17 examples/s]Filter (num_proc=10):  10%|█         | 127/1264 [00:02<00:23, 47.73 examples/s]Filter (num_proc=10): 100%|██████████| 1264/1264 [00:02<00:00, 439.07 examples/s]
+Filter (num_proc=10):  50%|█████     | 632/1264 [00:02<00:02, 298.44 examples/s]Using /home/chanho/.cache/torch_extensions/py311_cu121 as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /home/chanho/.cache/torch_extensions/py311_cu121/fused_adam/build.ninja...
+/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/torch/utils/cpp_extension.py:1967: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+Building extension module fused_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+Filter (num_proc=10): 100%|██████████| 1264/1264 [00:02<00:00, 432.66 examples/s]
+ninja: no work to do.
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.06606650352478027 seconds
+[2024-05-31 21:33:57,646] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed info: version=0.14.2, git-hash=unknown, git-branch=unknown
+[2024-05-31 21:33:57,646] [INFO] [comm.py:662:init_distributed] Distributed backend already initialized
+Using /home/chanho/.cache/torch_extensions/py311_cu121 as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /home/chanho/.cache/torch_extensions/py311_cu121/fused_adam/build.ninja...
+/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/torch/utils/cpp_extension.py:1967: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+Building extension module fused_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.06317496299743652 seconds
+[2024-05-31 21:33:57,943] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2024-05-31 21:33:57,944] [INFO] [logging.py:96:log_dist] [Rank 0] Using client Optimizer as basic optimizer
+[2024-05-31 21:33:57,944] [INFO] [logging.py:96:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
+[2024-05-31 21:33:57,947] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Basic Optimizer = FusedAdam
+[2024-05-31 21:33:57,947] [INFO] [utils.py:56:is_zero_supported_optimizer] Checking ZeRO support for optimizer=FusedAdam type=<class 'deepspeed.ops.adam.fused_adam.FusedAdam'>
+[2024-05-31 21:33:57,947] [INFO] [logging.py:96:log_dist] [Rank 0] Creating torch.bfloat16 ZeRO stage 2 optimizer
+[2024-05-31 21:33:57,948] [INFO] [stage_1_and_2.py:148:__init__] Reduce bucket size 500,000,000
+[2024-05-31 21:33:57,948] [INFO] [stage_1_and_2.py:149:__init__] Allgather bucket size 500,000,000
+[2024-05-31 21:33:57,948] [INFO] [stage_1_and_2.py:150:__init__] CPU Offload: False
+[2024-05-31 21:33:57,948] [INFO] [stage_1_and_2.py:151:__init__] Round robin gradient partitioning: False
+[2024-05-31 21:33:58,542] [INFO] [utils.py:779:see_memory_usage] Before initializing optimizer states
+[2024-05-31 21:33:58,542] [INFO] [utils.py:780:see_memory_usage] MA 6.71 GB         Max_MA 6.72 GB         CA 6.75 GB         Max_CA 7 GB 
+[2024-05-31 21:33:58,542] [INFO] [utils.py:787:see_memory_usage] CPU Virtual Memory:  used = 22.74 GB, percent = 18.1%
+[2024-05-31 21:33:58,669] [INFO] [utils.py:779:see_memory_usage] After initializing optimizer states
+[2024-05-31 21:33:58,669] [INFO] [utils.py:780:see_memory_usage] MA 6.71 GB         Max_MA 6.73 GB         CA 6.75 GB         Max_CA 7 GB 
+[2024-05-31 21:33:58,669] [INFO] [utils.py:787:see_memory_usage] CPU Virtual Memory:  used = 22.77 GB, percent = 18.1%
+[2024-05-31 21:33:58,669] [INFO] [stage_1_and_2.py:543:__init__] optimizer state initialized
+[2024-05-31 21:33:58,796] [INFO] [utils.py:779:see_memory_usage] After initializing ZeRO optimizer
+[2024-05-31 21:33:58,797] [INFO] [utils.py:780:see_memory_usage] MA 6.71 GB         Max_MA 6.71 GB         CA 6.75 GB         Max_CA 7 GB 
+[2024-05-31 21:33:58,797] [INFO] [utils.py:787:see_memory_usage] CPU Virtual Memory:  used = 22.79 GB, percent = 18.1%
+[2024-05-31 21:33:58,798] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Final Optimizer = FusedAdam
+[2024-05-31 21:33:58,798] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed using client LR scheduler
+[2024-05-31 21:33:58,798] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed LR Scheduler = <torch.optim.lr_scheduler.LambdaLR object at 0x7fb8b13f7710>
+[2024-05-31 21:33:58,798] [INFO] [logging.py:96:log_dist] [Rank 0] step=0, skipped=0, lr=[0.0], mom=[(0.9, 0.95)]
+[2024-05-31 21:33:58,799] [INFO] [config.py:996:print] DeepSpeedEngine configuration:
+[2024-05-31 21:33:58,800] [INFO] [config.py:1000:print]   activation_checkpointing_config  {
+    "partition_activations": false, 
+    "contiguous_memory_optimization": false, 
+    "cpu_checkpointing": false, 
+    "number_checkpoints": null, 
+    "synchronize_checkpoint_boundary": false, 
+    "profile": false
+}
+[2024-05-31 21:33:58,800] [INFO] [config.py:1000:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True}
+[2024-05-31 21:33:58,800] [INFO] [config.py:1000:print]   amp_enabled .................. False
+[2024-05-31 21:33:58,800] [INFO] [config.py:1000:print]   amp_params ................... False
+[2024-05-31 21:33:58,800] [INFO] [config.py:1000:print]   autotuning_config ............ {
+    "enabled": false, 
+    "start_step": null, 
+    "end_step": null, 
+    "metric_path": null, 
+    "arg_mappings": null, 
+    "metric": "throughput", 
+    "model_info": null, 
+    "results_dir": "autotuning_results", 
+    "exps_dir": "autotuning_exps", 
+    "overwrite": true, 
+    "fast": true, 
+    "start_profile_step": 3, 
+    "end_profile_step": 5, 
+    "tuner_type": "gridsearch", 
+    "tuner_early_stopping": 5, 
+    "tuner_num_trials": 50, 
+    "model_info_path": null, 
+    "mp_size": 1, 
+    "max_train_batch_size": null, 
+    "min_train_batch_size": 1, 
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03, 
+    "min_train_micro_batch_size_per_gpu": 1, 
+    "num_tuning_micro_batch_sizes": 3
+}
+[2024-05-31 21:33:58,800] [INFO] [config.py:1000:print]   bfloat16_enabled ............. True
+[2024-05-31 21:33:58,800] [INFO] [config.py:1000:print]   bfloat16_immediate_grad_update  False
+[2024-05-31 21:33:58,800] [INFO] [config.py:1000:print]   checkpoint_parallel_write_pipeline  False
+[2024-05-31 21:33:58,800] [INFO] [config.py:1000:print]   checkpoint_tag_validation_enabled  True
+[2024-05-31 21:33:58,800] [INFO] [config.py:1000:print]   checkpoint_tag_validation_fail  False
+[2024-05-31 21:33:58,800] [INFO] [config.py:1000:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x7fb854e10f10>
+[2024-05-31 21:33:58,800] [INFO] [config.py:1000:print]   communication_data_type ...... None
+[2024-05-31 21:33:58,800] [INFO] [config.py:1000:print]   compile_config ............... enabled=False backend='inductor' kwargs={}
+[2024-05-31 21:33:58,800] [INFO] [config.py:1000:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2024-05-31 21:33:58,800] [INFO] [config.py:1000:print]   curriculum_enabled_legacy .... False
+[2024-05-31 21:33:58,800] [INFO] [config.py:1000:print]   curriculum_params_legacy ..... False
+[2024-05-31 21:33:58,800] [INFO] [config.py:1000:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'curriculum_learning': {'enabled': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2024-05-31 21:33:58,800] [INFO] [config.py:1000:print]   data_efficiency_enabled ...... False
+[2024-05-31 21:33:58,800] [INFO] [config.py:1000:print]   dataloader_drop_last ......... False
+[2024-05-31 21:33:58,800] [INFO] [config.py:1000:print]   disable_allgather ............ False
+[2024-05-31 21:33:58,800] [INFO] [config.py:1000:print]   dump_state ................... False
+[2024-05-31 21:33:58,800] [INFO] [config.py:1000:print]   dynamic_loss_scale_args ...... None
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   eigenvalue_enabled ........... False
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   eigenvalue_gas_boundary_resolution  1
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   eigenvalue_layer_num ......... 0
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   eigenvalue_max_iter .......... 100
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   eigenvalue_stability ......... 1e-06
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   eigenvalue_tol ............... 0.01
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   eigenvalue_verbose ........... False
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   elasticity_enabled ........... False
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   flops_profiler_config ........ {
+    "enabled": false, 
+    "recompute_fwd_factor": 0.0, 
+    "profile_step": 1, 
+    "module_depth": -1, 
+    "top_modules": 1, 
+    "detailed": true, 
+    "output_file": null
+}
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   fp16_auto_cast ............... None
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   fp16_enabled ................. False
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   fp16_master_weights_and_gradients  False
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   global_rank .................. 0
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   grad_accum_dtype ............. None
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   gradient_accumulation_steps .. 1
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   gradient_clipping ............ 1.0
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   gradient_predivide_factor .... 1.0
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   graph_harvesting ............. False
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   initial_dynamic_scale ........ 1
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   load_universal_checkpoint .... False
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   loss_scale ................... 1.0
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   memory_breakdown ............. False
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   mics_hierarchial_params_gather  False
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   mics_shard_size .............. -1
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') enabled=False
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   nebula_config ................ {
+    "enabled": false, 
+    "persistent_storage_path": null, 
+    "persistent_time_interval": 100, 
+    "num_of_version_in_retention": 2, 
+    "enable_nebula_load": true, 
+    "load_path": null
+}
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   optimizer_legacy_fusion ...... False
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   optimizer_name ............... None
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   optimizer_params ............. None
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True}
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   pld_enabled .................. False
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   pld_params ................... False
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   prescale_gradients ........... False
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   scheduler_name ............... None
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   scheduler_params ............. None
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   seq_parallel_communication_data_type  torch.float32
+[2024-05-31 21:33:58,801] [INFO] [config.py:1000:print]   sparse_attention ............. None
+[2024-05-31 21:33:58,802] [INFO] [config.py:1000:print]   sparse_gradients_enabled ..... False
+[2024-05-31 21:33:58,802] [INFO] [config.py:1000:print]   steps_per_print .............. 10
+[2024-05-31 21:33:58,802] [INFO] [config.py:1000:print]   train_batch_size ............. 2
+[2024-05-31 21:33:58,802] [INFO] [config.py:1000:print]   train_micro_batch_size_per_gpu  1
+[2024-05-31 21:33:58,802] [INFO] [config.py:1000:print]   use_data_before_expert_parallel_  False
+[2024-05-31 21:33:58,802] [INFO] [config.py:1000:print]   use_node_local_storage ....... False
+[2024-05-31 21:33:58,802] [INFO] [config.py:1000:print]   wall_clock_breakdown ......... False
+[2024-05-31 21:33:58,802] [INFO] [config.py:1000:print]   weight_quantization_config ... None
+[2024-05-31 21:33:58,802] [INFO] [config.py:1000:print]   world_size ................... 2
+[2024-05-31 21:33:58,802] [INFO] [config.py:1000:print]   zero_allow_untested_optimizer  False
+[2024-05-31 21:33:58,802] [INFO] [config.py:1000:print]   zero_config .................. stage=2 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500,000,000 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=500,000,000 overlap_comm=False load_from_fp32_weights=True elastic_checkpoint=False offload_param=DeepSpeedZeroOffloadParamConfig(device='none', nvme_path=None, buffer_count=5, buffer_size=100,000,000, max_in_cpu=1,000,000,000, pin_memory=False) offload_optimizer=DeepSpeedZeroOffloadOptimizerConfig(device='none', nvme_path=None, buffer_count=4, pin_memory=False, pipeline=False, pipeline_read=False, pipeline_write=False, fast_init=False, ratio=1.0) sub_group_size=1,000,000,000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=30000000 param_persistence_threshold=10000 model_persistence_threshold=sys.maxsize max_live_parameters=30000000 max_reuse_distance=1,000,000,000 gather_16bit_weights_on_model_save=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=False pipeline_loading_checkpoint=False override_module_apply=True
+[2024-05-31 21:33:58,802] [INFO] [config.py:1000:print]   zero_enabled ................. True
+[2024-05-31 21:33:58,802] [INFO] [config.py:1000:print]   zero_force_ds_cpu_optimizer .. True
+[2024-05-31 21:33:58,802] [INFO] [config.py:1000:print]   zero_optimization_stage ...... 2
+[2024-05-31 21:33:58,802] [INFO] [config.py:986:print_user_config]   json = {
+    "train_batch_size": 2, 
+    "train_micro_batch_size_per_gpu": 1, 
+    "steps_per_print": 10, 
+    "zero_optimization": {
+        "stage": 2, 
+        "offload_param": {
+            "device": "none"
+        }, 
+        "offload_optimizer": {
+            "device": "none"
+        }, 
+        "stage3_param_persistence_threshold": 1.000000e+04, 
+        "stage3_max_live_parameters": 3.000000e+07, 
+        "stage3_prefetch_bucket_size": 3.000000e+07, 
+        "memory_efficient_linear": false
+    }, 
+    "bf16": {
+        "enabled": true
+    }, 
+    "gradient_clipping": 1.0, 
+    "prescale_gradients": false, 
+    "wall_clock_breakdown": false, 
+    "hybrid_engine": {
+        "enabled": false, 
+        "inference_tp_size": 1, 
+        "release_inference_cache": false, 
+        "pin_parameters": true, 
+        "tp_gather_partition_size": 8
+    }
+}
+wandb: Currently logged in as: cksgh0984 (organization-chanho). Use `wandb login --relogin` to force relogin
+wandb: Currently logged in as: cksgh0984 (organization-chanho). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.17.0 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.6
+wandb: Run data is saved locally in /home/chanho/Model/SHARE/Refactorizing/wandb/run-20240531_213359-cdmkbwjy
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run stoic-pond-296
+wandb: ⭐️ View project at https://wandb.ai/organization-chanho/Shared%20Memory
+wandb: 🚀 View run at https://wandb.ai/organization-chanho/Shared%20Memory/runs/cdmkbwjy
+wandb: wandb version 0.17.0 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.6
+wandb: Run data is saved locally in /home/chanho/Model/SHARE/Refactorizing/wandb/run-20240531_213359-6xa5bfhw
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run honest-surf-297
+wandb: ⭐️ View project at https://wandb.ai/organization-chanho/Shared%20Memory
+wandb: 🚀 View run at https://wandb.ai/organization-chanho/Shared%20Memory/runs/6xa5bfhw
+***** Running training *****
+***** Evaluating perplexity, Epoch 0/50 *****
+Beginning of Epoch 1/50
+/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/bitsandbytes/autograd/_functions.py:316: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/chanho/anaconda3/envs/COMEDY/lib/python3.11/site-packages/bitsandbytes/autograd/_functions.py:316: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+[2024-05-31 21:34:23,446] [INFO] [launch.py:319:sigkill_handler] Killing subprocess 1555882
+[2024-05-31 21:34:23,446] [INFO] [launch.py:319:sigkill_handler] Killing subprocess 1555883
+[2024-05-31 21:34:23,673] [ERROR] [launch.py:325:sigkill_handler] ['/home/chanho/anaconda3/envs/COMEDY/bin/python', '-u', 'training/EPISODE/main.py', '--local_rank=1', '--model_name', 'quan_llama', '--model_name_or_path', '/home/chanho/Model/SHARE/Refactorizing/result/output_path', '--train_data_path', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json', '--valid_data_path', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/valid_without_tag.json', '--per_device_train_batch_size', '1', '--per_device_eval_batch_size', '1', '--data_output_path', '/home/chanho/Model/SHARE/Refactorizing/result/output_path/data', '--max_seq_len', '2048', '--learning_rate', '1e-5', '--weight_decay', '0.1', '--num_train_epochs', '50', '--num_train_samples', '10735', '/home/chanho/Model/SHARE/Refactorizing/result/dataset/train_without_tag.json', '--gradient_accumulation_steps', '1', '--lr_scheduler_type', 'cosine', '--num_warmup_steps', '1000', '--seed', '42', '--zero_stage', '2', '--save_interval', '1000', '--eval_interval', '100', '--output_dir', '/home/chanho/Model/SHARE/Refactorizing/result/output_path/2024-05-31-21.33.33'] exits with return code = -9

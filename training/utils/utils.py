@@ -25,22 +25,6 @@ def to_device(batch, device):
             output[k] = v
     return output
 
-
-class MovingAverage:
-
-    def __init__(self):
-        self.count = 0
-        self.total = 0
-        self.mean = 0
-
-    def update(self, num):
-        self.total += num
-        self.count += 1
-        self.mean = self.total / self.count
-
-        return self.mean
-
-
 def save_hf_format(model, tokenizer, args, sub_folder=""):
     # used to save huggingface format, so we can use it for hf.from_pretrained
     model_to_save = model.module if hasattr(model, 'module') else model
@@ -180,9 +164,16 @@ def moving_average(model, model_ema, beta=0.992, device=None, zero_stage=0):
                 param_ema.data.copy_(torch.lerp(data, param_ema.data, beta))
 
 
+            
+def save_PEFT_model(model, save_dir):
+    os.makedirs(save_dir, exist_ok=True)
+    model.save_pretrained(save_dir)
+    
+
 def save_zero_three_model(model_ema, tokenizer, global_rank, save_dir, zero_stage=0):
     zero_stage_3 = (zero_stage == 3)
     os.makedirs(save_dir, exist_ok=True)
+    model_ema.save_pretrained(args.output_dir)
     CONFIG_NAME = "config.json"
     WEIGHTS_NAME = "pytorch_model.bin"
     output_model_file = os.path.join(save_dir, WEIGHTS_NAME)
